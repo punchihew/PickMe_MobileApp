@@ -39,6 +39,16 @@ export default function index() {
        <Text style = {styles.Text3}>Outlets Near You!</Text>
 
 
+        
+     <Image
+        style={styles.image1}
+        source={require('../assets/home/image5.jpg')}
+      />
+
+    <Image
+        style={styles.image1}
+        source={require('../assets/home/image5.jpg')}
+      />
 
      <Image
         style={styles.image1}
@@ -138,11 +148,11 @@ const styles = StyleSheet.create({
       },
 
       image1: {
-        width: 220,
+        width: 320,
         height: 220,
       position:"relative",
       borderRadius:10,
-      marginLeft:-120,
+      marginLeft:-20,
       marginTop:10
       },
 
