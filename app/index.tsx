@@ -107,7 +107,7 @@ export default function index() {
       /> 
 
           <View style = {styles.last}>
-              <Text>More Info</Text> 
+              <Text style = {styles.Text5}>More Info</Text> 
             </View>
             <Image
         style={styles.lastPic}
