@@ -57,7 +57,7 @@ export default function index() {
       />
             <View style={styles.currentIndicator} />
           
-      
+        
        <ScrollView style={styles.scrollView}>
 
        <Image
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
         fontSize :20,
         fontWeight: 'bold',
         color:"orange",
-        marginLeft:-200,
+        marginLeft:-190,
         marginTop:10,
       },
 
