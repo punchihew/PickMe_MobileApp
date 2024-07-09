@@ -26,7 +26,7 @@ export default function index() {
         }}
         />
 
-        {/* <Text style = {styles.Text1}>Self Pickup</Text> */}
+        <Text style = {styles.Text2}>Self Pickup</Text>
 
        <Image
         style={styles.tinyLogo1}
@@ -91,6 +91,14 @@ const styles = StyleSheet.create({
     color:"black",
     marginLeft:-220,
     marginTop:-19,
+  },
+
+  Text2:{
+    fontSize :10,
+    fontWeight: 'bold',
+    color:"black",
+    marginLeft:-60,
+    marginTop:-16,
   },
 
 });
