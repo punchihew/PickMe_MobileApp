@@ -121,7 +121,7 @@ export default function index() {
         source={require('../assets/home/image8.jpg')}
       />
           <View style = {styles.last}>
-              <Text>More Info</Text> 
+              <Text style = {styles.Text5}>More Info</Text> 
             </View>
             <Image
         style={styles.lastPic}
