@@ -43,22 +43,20 @@ export default function index() {
         style={styles.Ellipse4}
         source={require('../assets/home/Home2/Ellipse_3.png')}
       />
-       <Text>Chiken</Text>
        <Image
         style={styles.Ellipse5}
         source={require('../assets/home/Home2/Ellipse_5.png')}
       />
-       <Text>Chiken</Text>
        <Image
         style={styles.Ellipse3}
         source={require('../assets/home/Home2/Ellipse_4.png')}
       />
-       <Text>Chiken</Text>
       <Image
         style={styles.Ellipse6}
         source={require('../assets/home/Home2/Ellipse_2.png')}
       />
-       <Text>Chiken</Text>
+            <View style={styles.currentIndicator} />
+          
       
        <ScrollView style={styles.scrollView}>
 
@@ -224,7 +222,6 @@ const styles = StyleSheet.create({
       borderRadius:10,
       marginLeft:-110,
       marginTop:5,
-      display:"flex"
       },
 
       Ellipse5: {
@@ -233,16 +230,16 @@ const styles = StyleSheet.create({
       borderRadius:10,
       marginLeft:-290,
       marginTop:-61,
-      display:"flex",
       borderColor:"orange"
       },
+
       Ellipse6: {
         width: 60,
         height: 60,
       borderRadius:10,
       marginLeft:270,
       marginTop:-61,
-      display:"flex"
+      
       },
 
       Ellipse3: {
@@ -251,10 +248,7 @@ const styles = StyleSheet.create({
       borderRadius:10,
       marginLeft:80,
       marginTop:-61,
-      display:"flex"
+      
       },
 
-
-
-      
 });
