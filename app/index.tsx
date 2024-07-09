@@ -99,7 +99,7 @@ export default function index() {
           uri: 'https://img.icons8.com/?size=100&id=118969&format=png&color=000000',
         }}
         />
-        <Text style={styles.footerText}>Footer Content</Text>
+        <Text style={styles.footerText}></Text>
       </View>
 
     </SafeAreaView>
@@ -210,7 +210,7 @@ const styles = StyleSheet.create({
       },
 
       footer: {
-        height: 60,
+        height: 40,
         width:389,
         backgroundColor: 'orange',
         borderTopColor: '#e7e7e7',
@@ -259,8 +259,8 @@ const styles = StyleSheet.create({
       tinyLogo3:{
         width: 50,
         height: 50,
-        marginTop: -20,
-        marginLeft:160
+        marginTop:10,
+        marginLeft:170
       },
 
 });
