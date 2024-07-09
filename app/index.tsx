@@ -4,7 +4,7 @@ import { Text, View,StyleSheet,Image,TextInput,TouchableOpacity, } from "react-n
 export default function index() {
   return (
     <View style = {styles.container}>
-        <Text>Welcome Foodies</Text>
+        <Text style = {styles.Text1}>Welcome Foodies</Text>
 
         <Image
         style={styles.location}
@@ -51,4 +51,13 @@ const styles = StyleSheet.create({
         textAlign:'center',
         
       },
+
+    Text1:{
+      marginTop:20,
+      textAlign:'center',
+      fontWeight: 'bold',
+      
+    },
+
+      
 });
