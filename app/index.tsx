@@ -1,18 +1,27 @@
-import { View, Text ,StyleSheet} from 'react-native'
+import { View, Text ,StyleSheet,SafeAreaView,Image} from 'react-native'
 import React from 'react'
 
 export default function index() {
   return (
-    <View style={styles.container}> 
-      <Text   >Hi</Text>
-    </View>
+    <SafeAreaView style={styles.container}> 
+       <View>
+       <Image
+        style={styles.image1}
+        source={require('../assets/home/image9.jpg')}
+        
+      />
+       </View>
+    </SafeAreaView>
   )
 }
 
 
 const styles = StyleSheet.create({
-  container:{
-    
-  }
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: 'white', 
+    position: 'relative'
+  },
 
 });
