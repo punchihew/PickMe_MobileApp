@@ -13,9 +13,25 @@ export default function index() {
         }}
       /> 
 
+       <Image
+        style={styles.location1}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=12773&format=png&color=000000',
+        }}
+      /> 
+
+        <Image
+        style={styles.location2}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=104&format=png&color=000000',
+        }}
+      /> 
+
      <TouchableOpacity style={styles.button} onPress={() => alert('Welcome To Our Foodies!')}>
         <Text style={styles.Text}> LOG OUT</Text>
       </TouchableOpacity>
+
+      <View style={styles.currentIndicator} />
     </View>
   )
 }
@@ -29,10 +45,9 @@ const styles = StyleSheet.create({
         position: 'relative'
       },
       location:{
-        width: 30,
-        height: 30,
-        marginTop: -30,
-        marginLeft:350,
+        width: 28,
+        height: 24,
+        marginLeft:340,
       },
       button:{
         width: 80,
@@ -57,6 +72,29 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
       
     },
+
+    location1:{
+        width: 30,
+        height: 30,
+        marginTop: -25,
+        marginLeft:220,
+      },
+
+      location2:{
+        width: 24,
+        height: 25,
+        marginTop: -29,
+        marginLeft:280,
+      },
+
+      currentIndicator: {
+        height: 1,
+        width: 350,
+        borderRadius: 10,
+        backgroundColor:"orange",
+        marginHorizontal: 5,
+        marginTop:10
+      },
 
       
 });
