@@ -48,7 +48,7 @@ export default function index() {
 
     <Image
         style={styles.image1}
-        source={require('../assets/home/image5.jpg')}
+        source={require('../assets/home/image1.jpg')}
       />
 
      <Image
@@ -156,12 +156,13 @@ const styles = StyleSheet.create({
         height: 220,
       position:"relative",
       borderRadius:10,
-      marginLeft:-20,
+      marginLeft:-10,
       marginTop:10
       },
 
       scrollView: {
         marginHorizontal: 20,
+        marginLeft:-10,
       },
 
 
