@@ -93,12 +93,28 @@ export default function index() {
        </ScrollView>
       
        <View style={styles.footer}>
+
        <Image
         style={styles.tinyLogo3}
         source={{
           uri: 'https://img.icons8.com/?size=100&id=118969&format=png&color=000000',
         }}
         />
+
+      <Image
+        style={styles.tinyLogo4}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=JjXkZB4POgHN&format=png&color=000000',
+        }}
+        />
+
+        <Image
+        style={styles.tinyLogo5}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=akhzv8xSoXT9&format=png&color=000000',
+        }}
+        />
+
         <Text style={styles.footerText}></Text>
       </View>
 
@@ -261,6 +277,20 @@ const styles = StyleSheet.create({
         height: 50,
         marginTop:10,
         marginLeft:170
+      },
+      
+      tinyLogo4:{
+        width: 50,
+        height: 50,
+        marginTop:-65,
+        marginLeft:10
+      },
+
+      tinyLogo5:{
+        width: 50,
+        height: 50,
+        marginTop:-50,
+        marginLeft:320
       },
 
 });
