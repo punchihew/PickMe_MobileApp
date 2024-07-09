@@ -42,7 +42,7 @@ export default function index() {
 
      <Image
         style={styles.image1}
-        source={require('../assets/home/image.jpg')}
+        source={require('../assets/home/image5.jpg')}
       />
 
     </View>
@@ -138,10 +138,12 @@ const styles = StyleSheet.create({
       },
 
       image1: {
-        width: 250,
-        height: 250,
+        width: 220,
+        height: 220,
       position:"relative",
-      borderRadius:10
+      borderRadius:10,
+      marginLeft:-120,
+      marginTop:10
       },
 
 
