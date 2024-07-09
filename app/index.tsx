@@ -41,7 +41,7 @@ export default function index() {
 
        <Image
         style={styles.Ellipse4}
-        source={require('../assets/home/Home2/Ellipse_4.png')}
+        source={require('../assets/home/Home2/Ellipse_3.png')}
       />
        <Image
         style={styles.Ellipse5}
@@ -49,11 +49,11 @@ export default function index() {
       />
        <Image
         style={styles.Ellipse3}
-        source={require('../assets/home/Home2/Ellipse_5.png')}
+        source={require('../assets/home/Home2/Ellipse_4.png')}
       />
       <Image
         style={styles.Ellipse6}
-        source={require('../assets/home/Home2/Ellipse_5.png')}
+        source={require('../assets/home/Home2/Ellipse_2.png')}
       />
       
        <ScrollView style={styles.scrollView}>
