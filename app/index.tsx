@@ -53,7 +53,20 @@ export default function index() {
 
      <Image
         style={styles.image1}
-        source={require('../assets/home/image5.jpg')}
+        source={require('../assets/home/image2.jpg')}
+      />
+
+     <Image
+        style={styles.image1}
+        source={require('../assets/home/image8.jpg')}
+      />
+      <Image
+        style={styles.image1}
+        source={require('../assets/home/image9.jpg')}
+      />
+      <Image
+        style={styles.image1}
+        source={require('../assets/home/image10.jpg')}
       />
 
        </ScrollView>
