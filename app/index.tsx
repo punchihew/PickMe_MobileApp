@@ -39,9 +39,10 @@ export default function index() {
        <Text style = {styles.Text3}>Outlets Near You!</Text>
 
 
-       <TouchableOpacity style={styles.roundButton}>
-        <Text style={styles.buttonText}></Text>
-      </TouchableOpacity>
+       <Image
+        style={styles.Ellipse4}
+        source={require('../assets/home/Home2/Ellipse_4.png')}
+      />
       
        <ScrollView style={styles.scrollView}>
 
@@ -188,20 +189,6 @@ const styles = StyleSheet.create({
         
       },
 
-      roundButton: {
-        width: 50,
-        height: 50,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'orange',
-        borderRadius: 50, // Half of width or height to make it round
-      },
-      buttonText: {
-        color: '#fff',
-        fontSize: 18,
-        textAlign: 'center',
-      },
-
       footer: {
         height: 60,
         width:389,
@@ -212,8 +199,17 @@ const styles = StyleSheet.create({
 
       footerText: {
         fontSize: 18,
-        textAlign:'center',
+        textAlign:'center', 
       },
+
+      Ellipse4: {
+        width: 60,
+        height: 60,
+      borderRadius:10,
+      marginLeft:-10,
+      marginTop:10
+      },
+
 
 
       
