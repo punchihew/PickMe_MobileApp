@@ -12,25 +12,29 @@ export default function index() {
       <Text style = {styles.Text}> Sri Lankan Rice And Curry</Text>
 
       <Image
-        style={styles.tinyLogo5}
+        style={styles.tinyLogo1}
         source={{
           uri: 'https://img.icons8.com/?size=100&id=14oX0z9ydOeX&format=png&color=000000',
         }}
         />
+        <Text style = {styles.Text1}>Delivery</Text>
 
        <Image
-        style={styles.tinyLogo5}
+        style={styles.tinyLogo2}
         source={{
           uri: 'https://img.icons8.com/?size=100&id=9807&format=png&color=000000',
         }}
         />
 
+        {/* <Text style = {styles.Text1}>Self Pickup</Text> */}
+
        <Image
-        style={styles.tinyLogo5}
+        style={styles.tinyLogo1}
         source={{
           uri: 'https://img.icons8.com/?size=100&id=19099&format=png&color=000000',
         }}
         />
+         <Text>Est:31 +mins</Text>
        </View>
     </SafeAreaView>
   )
@@ -68,11 +72,25 @@ const styles = StyleSheet.create({
     marginTop:10,
   },
 
-  tinyLogo5:{
+  tinyLogo1:{
     width: 20,
     height: 24,
     marginTop:20,
     marginLeft:-290
+  },
+  tinyLogo2:{
+    width: 20,
+    height: 24,
+    marginTop:-20,
+    marginLeft:-140
+  },
+
+  Text1:{
+    fontSize :10,
+    fontWeight: 'bold',
+    color:"black",
+    marginLeft:-220,
+    marginTop:-19,
   },
 
 });
