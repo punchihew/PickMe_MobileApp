@@ -13,11 +13,6 @@ export default function index() {
           uri: 'https://img.icons8.com/?size=100&id=9q3GMpxNIMjC&format=png&color=000000',
         }}
       /> 
-      <Image
-        style={styles.image5}
-        source={require('../assets/imagePickMe1.png')}
-        
-      />
       <View>
       <Image
         style={styles.location}
@@ -72,31 +67,44 @@ export default function index() {
         style={styles.image1}
         source={require('../assets/home/image5.jpg')}
       />
+
+        <View style = {styles.last}></View>
        
     <Image
         style={styles.image1}
         source={require('../assets/home/image1.jpg')}
       />
+      
+        <View style = {styles.last}></View>
 
      <Image
         style={styles.image1}
         source={require('../assets/home/image2.jpg')}
-      />
+      /> 
+
+        <View style = {styles.last}></View>
 
      <Image
         style={styles.image1}
         source={require('../assets/home/image8.jpg')}
       />
+         <View style = {styles.last}></View>
+
       <Image
         style={styles.image1}
         source={require('../assets/home/image9.jpg')}
         
       />
-      <Text> Good</Text>
+
+         <View style = {styles.last}></View>
+
       <Image
         style={styles.image1}
         source={require('../assets/home/image10.jpg')}
       />
+            <View style = {styles.last}>
+              <Text>More Info</Text> 
+            </View>
 
        </ScrollView>
       
@@ -308,14 +316,17 @@ const styles = StyleSheet.create({
         marginTop:-7,
         marginLeft:287
       },
-      image5: {
-        width: 180,
-        height:70,
-      position:"relative",
-      borderRadius:10,
-      marginLeft:-10,
-      marginTop:-60
+
+      last: {
+        height: 28,
+        width:90,
+        backgroundColor: 'orange',
+        borderTopColor: '#e7e7e7',
+        borderRadius:10,
+        marginTop:-20,
+        marginLeft:220
       },
+     
 
 
 });
