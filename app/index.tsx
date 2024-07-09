@@ -1,10 +1,10 @@
 import React from 'react'
-import { Text, View,StyleSheet,Image,TextInput,ScrollView } from "react-native";
+import { Text, View,StyleSheet,Image,TextInput,ScrollView,TouchableOpacity,SafeAreaView } from "react-native";
 
 
 export default function index() {
   return (
-    <View style = {styles.container}>
+    <SafeAreaView style = {styles.container}>
 
 
        <Image
@@ -39,6 +39,10 @@ export default function index() {
        <Text style = {styles.Text3}>Outlets Near You!</Text>
 
 
+       <TouchableOpacity style={styles.roundButton}>
+        <Text style={styles.buttonText}></Text>
+      </TouchableOpacity>
+      
        <ScrollView style={styles.scrollView}>
 
        <Image
@@ -63,16 +67,21 @@ export default function index() {
       <Image
         style={styles.image1}
         source={require('../assets/home/image9.jpg')}
+        
       />
+      <Text> Good</Text>
       <Image
         style={styles.image1}
         source={require('../assets/home/image10.jpg')}
       />
 
        </ScrollView>
-     
+      
+       <View style={styles.footer}>
+        <Text style={styles.footerText}>Footer Content</Text>
+      </View>
 
-    </View>
+    </SafeAreaView>
   )
 }
 
@@ -81,7 +90,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        backgroundColor: 'white', 
+        backgroundColor: '#FFF5EE', 
         position: 'relative'
       },
       
@@ -176,6 +185,34 @@ const styles = StyleSheet.create({
       scrollView: {
         marginHorizontal: 20,
         marginLeft:-10,
+        
+      },
+
+      roundButton: {
+        width: 50,
+        height: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'orange',
+        borderRadius: 50, // Half of width or height to make it round
+      },
+      buttonText: {
+        color: '#fff',
+        fontSize: 18,
+        textAlign: 'center',
+      },
+
+      footer: {
+        height: 60,
+        width:389,
+        backgroundColor: 'orange',
+        borderTopColor: '#e7e7e7',
+        borderRadius:10
+      },
+
+      footerText: {
+        fontSize: 18,
+        textAlign:'center',
       },
 
 
