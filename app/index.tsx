@@ -4,34 +4,24 @@ import { Text, View,StyleSheet,Image,TextInput,TouchableOpacity, } from "react-n
 export default function index() {
   return (
     <View style = {styles.container}>
-        <Text style = {styles.Text1}>Welcome Foodies</Text>
 
-        <Image
+
+       <Image
+        style={styles.location2}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=9q3GMpxNIMjC&format=png&color=000000',
+        }}
+      /> 
+
+       <Image
         style={styles.location}
         source={{
           uri: 'https://img.icons8.com/?size=100&id=IFhxBaYSUYkJ&format=png&color=000000',
         }}
       /> 
-
-       <Image
-        style={styles.location1}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=12773&format=png&color=000000',
-        }}
-      /> 
-
-        <Image
-        style={styles.location2}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=104&format=png&color=000000',
-        }}
-      /> 
-
-     <TouchableOpacity style={styles.button} onPress={() => alert('Welcome To Our Foodies!')}>
-        <Text style={styles.Text}> LOG OUT</Text>
-      </TouchableOpacity>
-
-      <View style={styles.currentIndicator} />
+       <Text style = {styles.Text}>Hello, Navishka!</Text>
+       <Text style = {styles.Text1}>Make your own food stay at</Text>
+       <Text style = {styles.Text2}>Home!</Text>
     </View>
   )
 }
@@ -44,11 +34,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white', 
         position: 'relative'
       },
-      location:{
-        width: 28,
-        height: 24,
-        marginLeft:340,
-      },
+      
       button:{
         width: 80,
         height: 18,
@@ -60,31 +46,20 @@ const styles = StyleSheet.create({
         marginTop:-20
       
       },
-      Text:{
-   
-        textAlign:'center',
-        
-      },
 
-    Text1:{
-      marginTop:20,
-      textAlign:'center',
-      fontWeight: 'bold',
-      
-    },
-
-    location1:{
-        width: 30,
-        height: 30,
-        marginTop: -25,
-        marginLeft:220,
+    location:{
+        width: 35,
+        height: 35,
+        marginLeft:300,
+        marginTop: -38,
       },
 
       location2:{
-        width: 24,
-        height: 25,
-        marginTop: -29,
-        marginLeft:280,
+        width: 50,
+        height: 50,
+        marginTop: 9,
+        marginRight:300,
+        borderRadius:10
       },
 
       currentIndicator: {
@@ -95,6 +70,26 @@ const styles = StyleSheet.create({
         marginHorizontal: 5,
         marginTop:10
       },
+      Text:{
+        fontSize :9,
+        textAlign : "left",
+        fontWeight: 'bold',
+        marginTop:20,
+        marginRight:290
+      },
+
+      Text1:{
+        fontSize :20,
+        fontWeight: 'bold',
+        color:"#FFC301",
+        marginLeft:-50
+      }
+      Text1:{
+        fontSize :20,
+        fontWeight: 'bold',
+        color:"#FFC301",
+        marginLeft:-50
+      }
 
       
 });
