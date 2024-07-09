@@ -14,7 +14,21 @@ export default function index() {
       <Image
         style={styles.tinyLogo5}
         source={{
-          uri: 'https://img.icons8.com/?size=100&id=23175&format=png&color=000000',
+          uri: 'https://img.icons8.com/?size=100&id=14oX0z9ydOeX&format=png&color=000000',
+        }}
+        />
+
+       <Image
+        style={styles.tinyLogo5}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=9807&format=png&color=000000',
+        }}
+        />
+
+       <Image
+        style={styles.tinyLogo5}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=19099&format=png&color=000000',
         }}
         />
        </View>
@@ -53,12 +67,12 @@ const styles = StyleSheet.create({
     marginRight:100,
     marginTop:10,
   },
-  
+
   tinyLogo5:{
-    width: 30,
-    height: 35,
-    marginTop:-30,
-    marginLeft:340
+    width: 20,
+    height: 24,
+    marginTop:20,
+    marginLeft:-290
   },
 
 });
