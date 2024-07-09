@@ -43,18 +43,22 @@ export default function index() {
         style={styles.Ellipse4}
         source={require('../assets/home/Home2/Ellipse_3.png')}
       />
+       <Text>Chiken</Text>
        <Image
         style={styles.Ellipse5}
         source={require('../assets/home/Home2/Ellipse_5.png')}
       />
+       <Text>Chiken</Text>
        <Image
         style={styles.Ellipse3}
         source={require('../assets/home/Home2/Ellipse_4.png')}
       />
+       <Text>Chiken</Text>
       <Image
         style={styles.Ellipse6}
         source={require('../assets/home/Home2/Ellipse_2.png')}
       />
+       <Text>Chiken</Text>
       
        <ScrollView style={styles.scrollView}>
 
@@ -62,7 +66,7 @@ export default function index() {
         style={styles.image1}
         source={require('../assets/home/image5.jpg')}
       />
-
+       
     <Image
         style={styles.image1}
         source={require('../assets/home/image1.jpg')}
