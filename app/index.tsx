@@ -81,14 +81,14 @@ const styles = StyleSheet.create({
       Text1:{
         fontSize :20,
         fontWeight: 'bold',
-        color:"#FFC301",
-        marginLeft:-50
-      }
-      Text1:{
+        color:"black",
+        marginLeft:-110
+      },
+      Text2:{
         fontSize :20,
         fontWeight: 'bold',
         color:"#FFC301",
-        marginLeft:-50
+        marginLeft:-300
       }
 
       
