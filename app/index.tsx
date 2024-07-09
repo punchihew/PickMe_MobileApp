@@ -13,14 +13,22 @@ export default function index() {
           uri: 'https://img.icons8.com/?size=100&id=9q3GMpxNIMjC&format=png&color=000000',
         }}
       /> 
+      <Image
+        style={styles.location1}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=13800&format=png&color=000000',
+        }}
+      /> 
+        <Text style = {styles.Text4}>Sri Lanka, Matara</Text>
       <View>
       <Image
         style={styles.location}
         source={{
-          uri: 'https://img.icons8.com/?size=100&id=IFhxBaYSUYkJ&format=png&color=000000',
+          uri: 'https://img.icons8.com/?size=100&id=70098&format=png&color=000000',
         }}
       /> 
-        <Text style = {styles.Text4}>Matara</Text>
+
+       
       </View>
        
        <Text style = {styles.Text}>Hello, Navishka!</Text>
@@ -36,7 +44,7 @@ export default function index() {
        <Image
         style={styles.search}
         source={{
-          uri: 'https://img.icons8.com/?size=100&id=119005&format=png&color=000000',
+          uri: 'https://img.icons8.com/?size=100&id=7695&format=png&color=000000',
         }}
       /> 
        <Text style = {styles.Text3}>Outlets Near You!</Text>
@@ -68,27 +76,59 @@ export default function index() {
         source={require('../assets/home/image5.jpg')}
       />
 
-        <View style = {styles.last}></View>
+            <View style = {styles.last}>
+              <Text>More Info</Text> 
+            </View>
+            <Image
+        style={styles.lastPic}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
+        }}
+        />
        
     <Image
         style={styles.image1}
         source={require('../assets/home/image1.jpg')}
       />
       
-        <View style = {styles.last}></View>
+      <View style = {styles.last}>
+              <Text>More Info</Text> 
+            </View>
+            <Image
+        style={styles.lastPic}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
+        }}
+        />
 
      <Image
         style={styles.image1}
         source={require('../assets/home/image2.jpg')}
       /> 
 
-        <View style = {styles.last}></View>
+          <View style = {styles.last}>
+              <Text>More Info</Text> 
+            </View>
+            <Image
+        style={styles.lastPic}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
+        }}
+        />
 
      <Image
         style={styles.image1}
         source={require('../assets/home/image8.jpg')}
       />
-         <View style = {styles.last}></View>
+          <View style = {styles.last}>
+              <Text>More Info</Text> 
+            </View>
+            <Image
+        style={styles.lastPic}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
+        }}
+        />
 
       <Image
         style={styles.image1}
@@ -96,15 +136,29 @@ export default function index() {
         
       />
 
-         <View style = {styles.last}></View>
+          <View style = {styles.last}>
+              <Text>More Info</Text> 
+            </View>
+            <Image
+        style={styles.lastPic}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
+        }}
+        />
 
       <Image
         style={styles.image1}
         source={require('../assets/home/image10.jpg')}
       />
             <View style = {styles.last}>
-              <Text>More Info</Text> 
+              <Text style = {styles.Text5}>More Info</Text> 
             </View>
+            <Image
+        style={styles.lastPic}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
+        }}
+        />
 
        </ScrollView>
       
@@ -120,14 +174,14 @@ export default function index() {
       <Image
         style={styles.tinyLogo4}
         source={{
-          uri: 'https://img.icons8.com/?size=100&id=JjXkZB4POgHN&format=png&color=000000',
+          uri: 'https://img.icons8.com/?size=100&id=51779&format=png&color=000000',
         }}
         />
 
         <Image
         style={styles.tinyLogo5}
         source={{
-          uri: 'https://img.icons8.com/?size=100&id=akhzv8xSoXT9&format=png&color=000000',
+          uri: 'https://img.icons8.com/?size=100&id=23175&format=png&color=000000',
         }}
         />
 
@@ -213,10 +267,10 @@ const styles = StyleSheet.create({
       },
 
       search:{
-        width: 35,
-        height: 35,
-        marginLeft:237,
-        marginTop: -32,
+        width: 25,
+        height: 25,
+        marginLeft:160,
+        marginTop: -30,
       },
       Text3:{
         fontSize :20,
@@ -296,17 +350,17 @@ const styles = StyleSheet.create({
       },
       
       tinyLogo4:{
-        width: 50,
-        height: 50,
-        marginTop:-65,
+        width: 32,
+        height: 32,
+        marginTop:-58,
         marginLeft:10
       },
 
       tinyLogo5:{
-        width: 50,
-        height: 50,
-        marginTop:-50,
-        marginLeft:320
+        width: 30,
+        height: 35,
+        marginTop:-30,
+        marginLeft:340
       },
 
       Text4:{
@@ -314,7 +368,7 @@ const styles = StyleSheet.create({
         textAlign : "left",
         fontWeight: 'bold',
         marginTop:-7,
-        marginLeft:287
+        marginLeft:-143
       },
 
       last: {
@@ -324,7 +378,20 @@ const styles = StyleSheet.create({
         borderTopColor: '#e7e7e7',
         borderRadius:10,
         marginTop:-20,
-        marginLeft:220
+        marginLeft:220,
+        
+      },
+
+      Text5:{
+        textAlign:"center",
+        marginTop:6,
+      },
+
+      location1:{
+        width: 28,
+        height: 28,
+        marginLeft:-230,
+        marginTop: -32,
       },
      
 
