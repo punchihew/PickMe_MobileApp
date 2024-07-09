@@ -93,6 +93,12 @@ export default function index() {
        </ScrollView>
       
        <View style={styles.footer}>
+       <Image
+        style={styles.tinyLogo3}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=118969&format=png&color=000000',
+        }}
+        />
         <Text style={styles.footerText}>Footer Content</Text>
       </View>
 
@@ -249,6 +255,12 @@ const styles = StyleSheet.create({
       marginLeft:80,
       marginTop:-61,
       
+      },
+      tinyLogo3:{
+        width: 50,
+        height: 50,
+        marginTop: -20,
+        marginLeft:160
       },
 
 });
