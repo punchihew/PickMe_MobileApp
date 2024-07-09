@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View,StyleSheet,Image,TextInput,TouchableOpacity, } from "react-native";
+import { Text, View,StyleSheet,Image,TextInput,FlatList, } from "react-native";
 
 export default function index() {
   return (
@@ -22,6 +22,22 @@ export default function index() {
        <Text style = {styles.Text}>Hello, Navishka!</Text>
        <Text style = {styles.Text1}>Make your own food stay at</Text>
        <Text style = {styles.Text2}>Home!</Text>
+
+       <TextInput
+        style={styles.input}
+        placeholder="Search Here"
+        keyboardType="default"
+      />
+
+       <Image
+        style={styles.search}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=119005&format=png&color=000000',
+        }}
+      /> 
+       <Text style = {styles.Text3}>Outlets Near You!</Text>
+
+
     </View>
   )
 }
@@ -89,7 +105,31 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color:"#FFC301",
         marginLeft:-300
-      }
+      },
+      input: {
+        height: 35,
+        width : 200,
+        margin: 12,
+        borderWidth: 1,
+        padding: 10,
+        borderRadius:10,
+        backgroundColor: "#FBFAF5"
+      },
+
+      search:{
+        width: 35,
+        height: 35,
+        marginLeft:237,
+        marginTop: -46,
+      },
+      Text3:{
+        fontSize :20,
+        fontWeight: 'bold',
+        color:"orange",
+        marginLeft:-200,
+        marginTop:10,
+      },
+
 
       
 });
