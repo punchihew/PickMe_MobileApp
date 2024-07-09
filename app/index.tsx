@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View,StyleSheet,Image,TextInput, } from "react-native";
+import { Text, View,StyleSheet,Image,TextInput,ScrollView } from "react-native";
 
 
 export default function index() {
@@ -39,8 +39,9 @@ export default function index() {
        <Text style = {styles.Text3}>Outlets Near You!</Text>
 
 
-        
-     <Image
+       <ScrollView style={styles.scrollView}>
+
+       <Image
         style={styles.image1}
         source={require('../assets/home/image5.jpg')}
       />
@@ -54,6 +55,9 @@ export default function index() {
         style={styles.image1}
         source={require('../assets/home/image5.jpg')}
       />
+
+       </ScrollView>
+     
 
     </View>
   )
@@ -154,6 +158,10 @@ const styles = StyleSheet.create({
       borderRadius:10,
       marginLeft:-20,
       marginTop:10
+      },
+
+      scrollView: {
+        marginHorizontal: 20,
       },
 
 
