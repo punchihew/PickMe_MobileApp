@@ -29,7 +29,7 @@ export default function index() {
         <Text style = {styles.Text2}>Self Pickup</Text>
 
        <Image
-        style={styles.tinyLogo1}
+        style={styles.tinyLogo3}
         source={{
           uri: 'https://img.icons8.com/?size=100&id=19099&format=png&color=000000',
         }}
@@ -83,6 +83,12 @@ const styles = StyleSheet.create({
     height: 24,
     marginTop:-20,
     marginLeft:-140
+  },
+  tinyLogo3:{
+    width: 20,
+    height: 24,
+    marginTop:-20,
+    marginLeft:36
   },
 
   Text1:{
