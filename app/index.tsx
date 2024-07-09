@@ -13,13 +13,21 @@ export default function index() {
           uri: 'https://img.icons8.com/?size=100&id=9q3GMpxNIMjC&format=png&color=000000',
         }}
       /> 
-
-       <Image
+      <Image
+        style={styles.image5}
+        source={require('../assets/imagePickMe1.png')}
+        
+      />
+      <View>
+      <Image
         style={styles.location}
         source={{
           uri: 'https://img.icons8.com/?size=100&id=IFhxBaYSUYkJ&format=png&color=000000',
         }}
       /> 
+        <Text style = {styles.Text4}>Matara</Text>
+      </View>
+       
        <Text style = {styles.Text}>Hello, Navishka!</Text>
        <Text style = {styles.Text1}>Make your own food stay at</Text>
        <Text style = {styles.Text2}>Home!</Text>
@@ -292,5 +300,22 @@ const styles = StyleSheet.create({
         marginTop:-50,
         marginLeft:320
       },
+
+      Text4:{
+        fontSize :8,
+        textAlign : "left",
+        fontWeight: 'bold',
+        marginTop:-7,
+        marginLeft:287
+      },
+      image5: {
+        width: 180,
+        height:70,
+      position:"relative",
+      borderRadius:10,
+      marginLeft:-10,
+      marginTop:-60
+      },
+
 
 });
