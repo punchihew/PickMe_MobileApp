@@ -1,4 +1,4 @@
-import { View, Text ,StyleSheet,SafeAreaView,Image} from 'react-native'
+import { View, Text ,StyleSheet,SafeAreaView,Image,TouchableOpacity} from 'react-native'
 import React from 'react'
 
 export default function index() {
@@ -31,10 +31,15 @@ export default function index() {
        <Image
         style={styles.tinyLogo3}
         source={{
-          uri: 'https://img.icons8.com/?size=100&id=19099&format=png&color=000000',
+          uri: 'https://img.icons8.com/?size=100&id=10034&format=png&color=000000',
         }}
         />
-         <Text>Est:31 +mins</Text>
+         <Text style = {styles.Text3}>Est:31 +mins</Text>
+
+         
+     <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')}>
+        <Text style={styles.button}> SIGN UP </Text>
+      </TouchableOpacity>
        </View>
     </SafeAreaView>
   )
@@ -85,9 +90,9 @@ const styles = StyleSheet.create({
     marginLeft:-140
   },
   tinyLogo3:{
-    width: 20,
-    height: 24,
-    marginTop:-20,
+    width: 19,
+    height: 22,
+    marginTop:-18,
     marginLeft:36
   },
 
@@ -106,5 +111,19 @@ const styles = StyleSheet.create({
     marginLeft:-60,
     marginTop:-16,
   },
+  Text3:{
+    fontSize :10,
+    fontWeight: 'bold',
+    color:"black",
+    marginLeft:136,
+    marginTop:-16,
+  },
+  button:{
+    marginLeft:80,
+    fontWeight: 'bold',
+    color: 'white',
+    borderRadius:10,
+  
+  }
 
 });
