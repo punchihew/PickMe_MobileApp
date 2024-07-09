@@ -1,5 +1,6 @@
 import React from 'react'
-import { Text, View,StyleSheet,Image,TextInput,FlatList, } from "react-native";
+import { Text, View,StyleSheet,Image,TextInput, } from "react-native";
+
 
 export default function index() {
   return (
@@ -37,6 +38,12 @@ export default function index() {
       /> 
        <Text style = {styles.Text3}>Outlets Near You!</Text>
 
+
+
+     <Image
+        style={styles.image1}
+        source={require('../assets/home/image.jpg')}
+      />
 
     </View>
   )
@@ -128,6 +135,13 @@ const styles = StyleSheet.create({
         color:"orange",
         marginLeft:-200,
         marginTop:10,
+      },
+
+      image1: {
+        width: 250,
+        height: 250,
+      position:"relative",
+      borderRadius:10
       },
 
 
