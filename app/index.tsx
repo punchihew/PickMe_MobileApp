@@ -29,10 +29,10 @@ const styles = StyleSheet.create({
         position: 'relative'
       },
       location:{
-        width: 20,
-        height: 20,
-        marginTop: 10,
-        marginLeft:10,
+        width: 30,
+        height: 30,
+        marginTop: -30,
+        marginLeft:350,
       },
       button:{
         width: 80,
@@ -42,8 +42,7 @@ const styles = StyleSheet.create({
         color: 'black',
         borderRadius:10,
         backgroundColor : "orange",
-        position:"relative",
-        marginTop:-40
+        marginTop:-20
       
       },
       Text:{
