@@ -6,10 +6,10 @@ export default function index() {
     <SafeAreaView style={styles.container}> 
        <View>
        <Image
-        style={styles.image1}
-        source={require('../assets/home/image9.jpg')}
-        
+        style={styles.image}
+        source={require('../assets/home/image5.jpg')}
       />
+      <Text> Sri Lankan Rice And Curry</Text>
        </View>
     </SafeAreaView>
   )
@@ -22,6 +22,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'white', 
     position: 'relative'
+  },
+  image: {
+    width: 340,
+    height: 220,
+    position:"relative",
+    borderRadius:10,
+    marginLeft:-10,
+    marginTop:10
   },
 
 });
