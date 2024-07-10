@@ -173,24 +173,6 @@ export default function Home2() {
         
       </TouchableOpacity>
         
-{/* 
-            <Image
-            style={styles.tinyLogo5}
-            source={{
-              uri: 'https://img.icons8.com/?size=100&id=2797&format=png&color=000000',
-            }}
-            /> */}
-
-            {/* <Image
-            style={styles.tinyLogo7}
-            source={{
-              uri: 'https://img.icons8.com/?size=100&id=23175&format=png&color=000000',
-            }}
-            /> */}
-
-
-        
-        
         </View>
 
     </SafeAreaView>
