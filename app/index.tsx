@@ -136,26 +136,57 @@ export default function index() {
      
        <View style={styles.footer}>
 
+       <TouchableOpacity style={styles.button4} onPress={() => alert('Button pressed!')} >
+        <ImageBackground
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=2797&format=png&color=000000',
+          }}
+          style={styles.imageBackground1}
+          imageStyle={styles.imageStyle1}
+        >
+          <Text style={styles.text}></Text>
+        </ImageBackground>
+        
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button5} onPress={() => alert('Button pressed!')} >
+        <ImageBackground
+           source={{
+            uri: 'https://img.icons8.com/?size=100&id=23175&format=png&color=000000',
+          }}
+          style={styles.imageBackground1}
+          imageStyle={styles.imageStyle1}
+        >
+          <Text style={styles.text}></Text>
+        </ImageBackground>
+        
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button6} onPress={() => alert('Button pressed!')} >
+        <ImageBackground
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=51779&format=png&color=000000',
+          }}
+          style={styles.imageBackground1}
+          imageStyle={styles.imageStyle1}
+        >
+          <Text style={styles.text}></Text>
+        </ImageBackground>
+        
+      </TouchableOpacity>
+        
+{/* 
             <Image
             style={styles.tinyLogo5}
             source={{
               uri: 'https://img.icons8.com/?size=100&id=2797&format=png&color=000000',
             }}
-            />
+            /> */}
 
-            <Image
-            style={styles.tinyLogo6}
-            source={{
-              uri: 'https://img.icons8.com/?size=100&id=51779&format=png&color=000000',
-            }}
-            />
-
-            <Image
+            {/* <Image
             style={styles.tinyLogo7}
             source={{
               uri: 'https://img.icons8.com/?size=100&id=23175&format=png&color=000000',
             }}
-            />
+            /> */}
 
 
         
@@ -272,26 +303,6 @@ const styles = StyleSheet.create({
     borderTopColor: '#e7e7e7',
     borderRadius:10
   },
-  tinyLogo5:{
-    width: 50,
-    height: 50,
-    marginTop:10,
-    marginLeft:170
-  },
-  
-  tinyLogo6:{
-    width: 32,
-    height: 32,
-    marginTop:-58,
-    marginLeft:10
-  },
-
-  tinyLogo7:{
-    width: 30,
-    height: 35,
-    marginTop:-30,
-    marginLeft:340
-  },
   tinyLogo8:{
     width: 30,
     height: 35,
@@ -381,6 +392,50 @@ const styles = StyleSheet.create({
     color:"black",
     marginLeft:-195,
     marginTop:-15,
+  },
+  Text8:{
+    fontSize :12,
+    fontWeight: 'bold',
+    color:"black",
+    marginLeft:115,
+    marginTop:-15,
+  },
+  imageBackground1: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  imageStyle1: {
+    borderRadius: 10,
+  },
+  
+  button4: {
+    width: 40,
+    height: 40,
+    borderRadius: 10,
+    overflow: 'hidden',
+    marginTop:20,
+    marginLeft:170,
+    display:"flex"
+  },
+
+  button5: {
+    width: 40,
+    height: 40,
+    borderRadius: 10,
+    overflow: 'hidden',
+    marginTop:-58,
+    marginLeft:10,
+    display:"flex"
+  },
+  button6: {
+    width: 32,
+    height: 36,
+    borderRadius: 10,
+    overflow: 'hidden',
+    marginTop:-42,
+    marginLeft:340,
+    display:"flex"
   },
 
 
