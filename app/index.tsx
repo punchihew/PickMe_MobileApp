@@ -5,12 +5,34 @@ export default function index() {
   return (
     <SafeAreaView style={styles.container}> 
        <View style={styles.container1}>
+
+            <Image
+            style={styles.tinyLogo8}
+            source={{
+              uri: 'https://img.icons8.com/?size=100&id=40401&format=png&color=000000',
+            }}
+            />
+            <Image
+            style={styles.tinyLogo9}
+            source={{
+              uri: 'https://img.icons8.com/?size=100&id=13042&format=png&color=000000',
+            }}
+            />
        <Image
         style={styles.image}
         source={require('../assets/home/image5.jpg')}
       />
-      <Text style = {styles.Text}> Sri Lankan Rice And Curry</Text>
 
+           <Image
+            style={styles.tinyLogo10}
+            source={{
+              uri: 'https://img.icons8.com/?size=100&id=40401&format=png&color=000000',
+            }}
+            />
+
+      <Text style = {styles.Text}> Sri Lankan Rice And Curry</Text>
+          
+          
       <Image
         style={styles.tinyLogo1}
         source={{
@@ -93,11 +115,11 @@ const styles = StyleSheet.create({
     borderRadius:10
   },
   image: {
-    width: 340,
+    width: 360,
     height: 220,
     position:"relative",
     borderRadius:18,
-    marginLeft:-6,
+    marginLeft:-2,
     marginTop:10
   },
 
@@ -201,6 +223,18 @@ const styles = StyleSheet.create({
     height: 35,
     marginTop:-30,
     marginLeft:340
+  },
+  tinyLogo8:{
+    width: 30,
+    height: 35,
+    marginTop:6,
+    marginLeft:320
+  },
+  tinyLogo9:{
+    width: 38,
+    height: 40,
+    marginTop:-40,
+    marginLeft:-330
   },
 
 });
