@@ -87,6 +87,39 @@ export default function index() {
         </ImageBackground>
         
       </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button1} onPress={() => alert('Button pressed!')} >
+        <ImageBackground
+          source={require('../assets/home/dis/Dis1.jpg')}
+          style={styles.imageBackground}
+          imageStyle={styles.imageStyle}
+        >
+          <Text style={styles.text}></Text>
+        </ImageBackground>
+        
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button2} onPress={() => alert('Button pressed!')} >
+        <ImageBackground
+          source={require('../assets/home/dis/Dis2.jpg')}
+          style={styles.imageBackground}
+          imageStyle={styles.imageStyle}
+        >
+          <Text style={styles.text}></Text>
+        </ImageBackground>
+        
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button3} onPress={() => alert('Button pressed!')} >
+        <ImageBackground
+          source={require('../assets/home/dis/Dis2.jpg')}
+          style={styles.imageBackground}
+          imageStyle={styles.imageStyle}
+        >
+          <Text style={styles.text}></Text>
+        </ImageBackground>
+        
+      </TouchableOpacity>
       
       </ScrollView>
        </View>
@@ -286,6 +319,25 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     marginTop:20,
     marginLeft:10,
+    display:"flex"
+  },
+  button2: {
+    width: 160,
+    height: 200,
+    borderRadius: 10,
+    overflow: 'hidden',
+    marginTop:-338,
+    marginLeft:200,
+    display:"flex"
+  },
+  button3: {
+    width: 160,
+    height: 200,
+    borderRadius: 10,
+    overflow: 'hidden',
+    marginTop:22,
+    marginLeft:200,
+    display:"flex"
   },
   Text5:{
     fontSize :14,
