@@ -58,7 +58,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     backgroundColor: 'orange', 
-    position: 'relative'
+    position: 'relative',
+    borderRadius:10
   },
   image: {
     width: 340,
