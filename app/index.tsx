@@ -236,5 +236,11 @@ const styles = StyleSheet.create({
     marginTop:-40,
     marginLeft:-330
   },
+  tinyLogo10:{
+    width: 38,
+    height: 40,
+    marginTop:-40,
+    marginLeft:300
+  },
 
 });
