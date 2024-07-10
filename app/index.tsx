@@ -23,7 +23,7 @@ export default function Profile() {
                     uri: 'https://img.icons8.com/?size=100&id=6Kirlpj9Yq0L&format=png&color=000000',
                     }}
                     />
-                    <Text>For a Friend</Text>
+                    <Text style={styles.Text1}>For a Friend</Text>
               </TouchableOpacity>
 
               <TouchableOpacity style={styles.button2} onPress={() => alert('Button pressed!')} > 
@@ -34,7 +34,7 @@ export default function Profile() {
                     uri: 'https://img.icons8.com/?size=100&id=47270&format=png&color=000000',
                     }}
                     />
-                      <Text>Membership</Text>
+                      <Text  style={styles.Text1}>Membership</Text>
 
               </TouchableOpacity>
               <TouchableOpacity style={styles.button3} onPress={() => alert('Button pressed!')} > 
@@ -44,7 +44,7 @@ export default function Profile() {
                     uri: 'https://img.icons8.com/?size=100&id=11267&format=png&color=000000',
                     }}
                     />
-                      <Text>Help And Support</Text>
+                      <Text  style={styles.Text1}>Help And Support</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.button4} onPress={() => alert('Button pressed!')} > 
                  <Image
@@ -53,7 +53,7 @@ export default function Profile() {
                     uri: 'https://img.icons8.com/?size=100&id=31771&format=png&color=000000',
                     }}
                     />
-                      <Text>Earn With PickMe</Text>
+                      <Text  style={styles.Text1}>Earn With PickMe</Text>
               </TouchableOpacity>
 
               <TouchableOpacity style={styles.button8} onPress={() => alert('Button pressed!')} > 
@@ -64,7 +64,7 @@ export default function Profile() {
                     uri: 'https://img.icons8.com/?size=100&id=7994&format=png&color=000000',
                     }}
                     />
-                      <Text>Payment</Text>
+                      <Text style={styles.Text1}>Payment</Text>
               </TouchableOpacity>
               
 
