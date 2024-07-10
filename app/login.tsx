@@ -1,7 +1,7 @@
 import { Text, View,StyleSheet,Image,TextInput,TouchableOpacity, } from "react-native";
 
 
-export default function Index() {
+export default function login() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}> Welcome Pick Me Foods </Text>
