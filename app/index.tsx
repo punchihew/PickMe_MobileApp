@@ -1,4 +1,4 @@
-import { View, Text,StyleSheet,SafeAreaView,ScrollView} from 'react-native'
+import { View, Text,StyleSheet,SafeAreaView,ScrollView,Image} from 'react-native'
 import React from 'react'
 
 export default function Profile() {
@@ -6,15 +6,19 @@ export default function Profile() {
     <SafeAreaView style = {styles.container}>
       <View style = {styles.container1}>
       <ScrollView style={styles.scrollView}>
-        <Text style={styles.text}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Text>
+        
+        <Image
+            style={styles.tinyLogo8}
+            source={{
+              uri: 'https://img.icons8.com/?size=100&id=40401&format=png&color=000000',
+            }}
+            />
+        <Image
+            style={styles.tinyLogo9}
+            source={{
+              uri: 'https://img.icons8.com/?size=100&id=13042&format=png&color=000000',
+            }}
+            />
       </ScrollView>
 
       </View>
@@ -40,5 +44,10 @@ const styles = StyleSheet.create({
         borderRadius:10,
         marginTop:10
       },
+      scrollView: {
+        backgroundColor: 'pink',
+        marginHorizontal: 20,
+      },
+     
   
     })
