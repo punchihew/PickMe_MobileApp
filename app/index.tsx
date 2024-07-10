@@ -16,16 +16,33 @@ export default function Profile() {
              </View>
 
              <TouchableOpacity style={styles.button1} onPress={() => alert('Button pressed!')} > 
-             
+                 
+                  <Image
+                    style={styles.tinyLogo4}
+                    source={{
+                    uri: 'https://img.icons8.com/?size=100&id=nkplpFWWQEKZ&format=png&color=000000',
+                    }}
+                    />
               </TouchableOpacity>
 
               <TouchableOpacity style={styles.button2} onPress={() => alert('Button pressed!')} > 
-             
+                  
+                  <Image
+                    style={styles.tinyLogo4}
+                    source={{
+                    uri: 'https://img.icons8.com/?size=100&id=nkplpFWWQEKZ&format=png&color=000000',
+                    }}
+                    />
+
               </TouchableOpacity>
               <TouchableOpacity style={styles.button3} onPress={() => alert('Button pressed!')} > 
              
               </TouchableOpacity>
               <TouchableOpacity style={styles.button4} onPress={() => alert('Button pressed!')} > 
+             
+              </TouchableOpacity>
+
+              <TouchableOpacity style={styles.button8} onPress={() => alert('Button pressed!')} > 
              
               </TouchableOpacity>
               
@@ -174,19 +191,34 @@ const styles = StyleSheet.create({
         elevation: 5, // for Android
         
       },
+      button8: {
+        width: 320,
+        height: 59,
+        backgroundColor:"#F39234",
+        borderRadius: 10,
+        marginTop:20,
+        marginLeft:-10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.8,
+        shadowRadius: 2,
+        elevation: 5, // for Android
+        
+      },
       footer: {
         height: 40,
         width:389,
         backgroundColor: 'orange',
         borderTopColor: '#e7e7e7',
-        borderRadius:10
+        borderRadius:10,
+        marginTop:120
       },
       button7: {
         width: 40,
         height: 40,
         borderRadius: 10,
         overflow: 'hidden',
-        marginTop:20,
+        marginTop:18,
         marginLeft:170,
         display:"flex"
       },
@@ -205,7 +237,7 @@ const styles = StyleSheet.create({
         height: 36,
         borderRadius: 10,
         overflow: 'hidden',
-        marginTop:-42,
+        marginTop:-38,
         marginLeft:340,
         display:"flex"
       },
@@ -221,6 +253,13 @@ const styles = StyleSheet.create({
       text: {
         color: 'white',
         fontWeight: 'bold',
+      },
+      tinyLogo4:{
+     
+        width: 16,
+        height: 16,
+        marginTop:-17,
+        marginLeft:38
       },
     
       
