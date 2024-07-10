@@ -1,4 +1,4 @@
-import { View, Text ,StyleSheet,SafeAreaView,Image,TouchableOpacity} from 'react-native'
+import { View, Text ,StyleSheet,SafeAreaView,Image,TouchableOpacity,ImageBackground,ScrollView} from 'react-native'
 import React from 'react'
 
 export default function index() {
@@ -26,7 +26,7 @@ export default function index() {
            <Image
             style={styles.tinyLogo10}
             source={{
-              uri: 'https://img.icons8.com/?size=100&id=40401&format=png&color=000000',
+              uri: 'https://img.icons8.com/?size=100&id=581&format=png&color=000000',
             }}
             />
 
@@ -68,8 +68,11 @@ export default function index() {
         }}
         />
       </TouchableOpacity>
+       <Text style = {styles.Text5}>  
+       " Sri Lankan rice and curry is a traditional staple meal featuring steamed rice paired with a variety 
+       of flavorful curries and side dishes. "</Text>
        </View>
-
+     
        <View style={styles.footer}>
 
             <Image
@@ -92,6 +95,20 @@ export default function index() {
               uri: 'https://img.icons8.com/?size=100&id=23175&format=png&color=000000',
             }}
             />
+
+
+        
+        <Text>POPULAR PICKS</Text>
+        <TouchableOpacity style={styles.button1} onPress={() => alert('Button pressed!')} >
+        <ImageBackground
+          source={require('../assets/home/image9.jpg')}
+          style={styles.imageBackground}
+          imageStyle={styles.imageStyle}
+        >
+          <Text style={styles.text}></Text>
+        </ImageBackground>
+        
+      </TouchableOpacity>
         </View>
 
     </SafeAreaView>
@@ -237,10 +254,37 @@ const styles = StyleSheet.create({
     marginLeft:-330
   },
   tinyLogo10:{
-    width: 38,
-    height: 40,
-    marginTop:-40,
-    marginLeft:300
+    width: 32,
+    height: 36,
+    marginTop:-36,
+    marginLeft:318,
   },
+  imageBackground: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  imageStyle: {
+    borderRadius: 50,
+  },
+  text: {
+    color: 'white',
+    fontWeight: 'bold',
+  },
+  button1: {
+    width: 80,
+    height: 80,
+    borderRadius: 50,
+    overflow: 'hidden',
+    marginTop:-200,
+    marginLeft:10,
+  },
+  Text5:{
+    fontSize :14,
+    fontWeight: 'heavy',
+    color:"black",
+    
+  },
+
 
 });
