@@ -38,7 +38,7 @@ export default function index() {
 
          
      <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')}>
-        <Text style={styles.button}> SIGN UP </Text>
+        <Text style={styles.Text4}> ADD </Text>
       </TouchableOpacity>
        </View>
     </SafeAreaView>
@@ -120,11 +120,22 @@ const styles = StyleSheet.create({
     marginTop:-16,
   },
   button:{
-    marginLeft:80,
+    marginLeft:280,
     fontWeight: 'bold',
-    color: 'white',
+    height:18,
+    width:40,
     borderRadius:10,
+    color: 'white',
+    marginTop:50,
+    backgroundColor:"black"
   
-  }
+  },
+
+  Text4:{
+    fontSize :10,
+    fontWeight: 'bold',
+    color:"white",
+    
+  },
 
 });
