@@ -53,7 +53,13 @@ export default function Profile() {
               </TouchableOpacity>
 
               <TouchableOpacity style={styles.button8} onPress={() => alert('Button pressed!')} > 
-             
+                    
+              <Image
+                    style={styles.tinyLogo4}
+                    source={{
+                    uri: 'https://img.icons8.com/?size=100&id=nkplpFWWQEKZ&format=png&color=000000',
+                    }}
+                    />
               </TouchableOpacity>
               
 
