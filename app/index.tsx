@@ -20,7 +20,7 @@ export default function Profile() {
                   <Image
                     style={styles.tinyLogo4}
                     source={{
-                    uri: 'https://img.icons8.com/?size=100&id=nkplpFWWQEKZ&format=png&color=000000',
+                    uri: 'https://img.icons8.com/?size=100&id=6Kirlpj9Yq0L&format=png&color=000000',
                     }}
                     />
               </TouchableOpacity>
@@ -30,7 +30,7 @@ export default function Profile() {
                   <Image
                     style={styles.tinyLogo4}
                     source={{
-                    uri: 'https://img.icons8.com/?size=100&id=nkplpFWWQEKZ&format=png&color=000000',
+                    uri: 'https://img.icons8.com/?size=100&id=hZ4wRp2S2o89&format=png&color=000000',
                     }}
                     />
 
@@ -39,7 +39,7 @@ export default function Profile() {
                   <Image
                     style={styles.tinyLogo4}
                     source={{
-                    uri: 'https://img.icons8.com/?size=100&id=nkplpFWWQEKZ&format=png&color=000000',
+                    uri: 'https://img.icons8.com/?size=100&id=11267&format=png&color=000000',
                     }}
                     />
               </TouchableOpacity>
@@ -47,7 +47,7 @@ export default function Profile() {
                  <Image
                     style={styles.tinyLogo4}
                     source={{
-                    uri: 'https://img.icons8.com/?size=100&id=nkplpFWWQEKZ&format=png&color=000000',
+                    uri: 'https://img.icons8.com/?size=100&id=31771&format=png&color=000000',
                     }}
                     />
               </TouchableOpacity>
@@ -57,7 +57,7 @@ export default function Profile() {
               <Image
                     style={styles.tinyLogo4}
                     source={{
-                    uri: 'https://img.icons8.com/?size=100&id=nkplpFWWQEKZ&format=png&color=000000',
+                    uri: 'https://img.icons8.com/?size=100&id=7994&format=png&color=000000',
                     }}
                     />
               </TouchableOpacity>
@@ -272,10 +272,10 @@ const styles = StyleSheet.create({
       },
       tinyLogo4:{
      
-        width: 16,
-        height: 16,
-        marginTop:-17,
-        marginLeft:38
+        width: 32,
+        height: 29,
+        marginTop:12,
+        marginLeft:16
       },
     
       
