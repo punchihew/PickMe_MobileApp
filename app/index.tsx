@@ -39,6 +39,12 @@ export default function index() {
          
      <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')}>
         <Text style={styles.Text4}> ADD </Text>
+        <Image
+        style={styles.tinyLogo2}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=9807&format=png&color=000000',
+        }}
+        />
       </TouchableOpacity>
        </View>
     </SafeAreaView>
@@ -123,16 +129,16 @@ const styles = StyleSheet.create({
     marginLeft:280,
     fontWeight: 'bold',
     height:18,
-    width:40,
-    borderRadius:10,
+    width:58,
+    borderRadius:6,
     color: 'white',
-    marginTop:50,
+    marginTop:20,
     backgroundColor:"black"
   
   },
 
   Text4:{
-    fontSize :10,
+    fontSize :14,
     fontWeight: 'bold',
     color:"white",
     
