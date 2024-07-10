@@ -68,9 +68,27 @@ export default function index() {
         }}
         />
       </TouchableOpacity>
+
        <Text style = {styles.Text5}>  
        " Sri Lankan rice and curry is a traditional staple meal featuring steamed rice paired with a variety 
        of flavorful curries and side dishes. "</Text>
+
+       <Text style = {styles.Text6}>POPULAR PICKS</Text>
+
+      <ScrollView style={styles.scrollView}>
+       
+        <TouchableOpacity style={styles.button1} onPress={() => alert('Button pressed!')} >
+        <ImageBackground
+          source={require('../assets/home/image9.jpg')}
+          style={styles.imageBackground}
+          imageStyle={styles.imageStyle}
+        >
+          <Text style={styles.text}></Text>
+        </ImageBackground>
+        
+      </TouchableOpacity>
+      
+      </ScrollView>
        </View>
      
        <View style={styles.footer}>
@@ -98,17 +116,7 @@ export default function index() {
 
 
         
-        <Text>POPULAR PICKS</Text>
-        <TouchableOpacity style={styles.button1} onPress={() => alert('Button pressed!')} >
-        <ImageBackground
-          source={require('../assets/home/image9.jpg')}
-          style={styles.imageBackground}
-          imageStyle={styles.imageStyle}
-        >
-          <Text style={styles.text}></Text>
-        </ImageBackground>
         
-      </TouchableOpacity>
         </View>
 
     </SafeAreaView>
@@ -265,18 +273,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   imageStyle: {
-    borderRadius: 50,
+    borderRadius: 10,
   },
   text: {
     color: 'white',
     fontWeight: 'bold',
   },
   button1: {
-    width: 80,
-    height: 80,
-    borderRadius: 50,
+    width: 160,
+    height: 160,
+    borderRadius: 10,
     overflow: 'hidden',
-    marginTop:-200,
+    marginTop:20,
     marginLeft:10,
   },
   Text5:{
@@ -284,6 +292,19 @@ const styles = StyleSheet.create({
     fontWeight: 'heavy',
     color:"black",
     
+  },
+  Text6:{
+    fontSize :16,
+    fontWeight: 'bold',
+    color:"black",
+    marginTop:10,
+    marginRight:200,
+    
+  },
+  scrollView: {
+    backgroundColor: 'orange',
+    width:370,
+    marginHorizontal: 20,
   },
 
 
