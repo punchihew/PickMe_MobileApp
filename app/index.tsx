@@ -58,6 +58,16 @@ export default function index() {
         />
          <Text style = {styles.Text3}>Est:31 +mins</Text>
 
+         <Image
+        style={styles.tinyLogo11}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=53376&format=png&color=000000',
+        }}
+        />
+         <Text style = {styles.Text7}>96%(500+)</Text>
+
+         <Text style = {styles.Text8}> Fee : LKR 230.00</Text>
+
          
      <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')}>
         <Text style={styles.Text4}> ADD </Text>
@@ -359,6 +369,20 @@ const styles = StyleSheet.create({
     width:370,
     marginHorizontal: 20,
   },
+  tinyLogo11:{
+    width: 19,
+    height: 22,
+    marginTop:18,
+    marginLeft:-290
+  },
+  Text7:{
+    fontSize :10,
+    fontWeight: 'bold',
+    color:"black",
+    marginLeft:-195,
+    marginTop:-15,
+  },
+
 
 
 });
