@@ -47,6 +47,31 @@ export default function index() {
         />
       </TouchableOpacity>
        </View>
+
+       <View style={styles.footer}>
+
+            <Image
+            style={styles.tinyLogo3}
+            source={{
+              uri: 'https://img.icons8.com/?size=100&id=2797&format=png&color=000000',
+            }}
+            />
+
+            <Image
+            style={styles.tinyLogo4}
+            source={{
+              uri: 'https://img.icons8.com/?size=100&id=51779&format=png&color=000000',
+            }}
+            />
+
+            <Image
+            style={styles.tinyLogo5}
+            source={{
+              uri: 'https://img.icons8.com/?size=100&id=23175&format=png&color=000000',
+            }}
+            />
+        </View>
+
     </SafeAreaView>
   )
 }
@@ -149,6 +174,33 @@ const styles = StyleSheet.create({
     height: 16,
     marginTop:-17,
     marginLeft:38
-  }
+  },
+  footer: {
+    height: 40,
+    width:389,
+    backgroundColor: 'orange',
+    borderTopColor: '#e7e7e7',
+    borderRadius:10
+  },
+  tinyLogo5:{
+    width: 50,
+    height: 50,
+    marginTop:10,
+    marginLeft:170
+  },
+  
+  tinyLogo6:{
+    width: 32,
+    height: 32,
+    marginTop:-58,
+    marginLeft:10
+  },
+
+  tinyLogo7:{
+    width: 30,
+    height: 35,
+    marginTop:-30,
+    marginLeft:340
+  },
 
 });
