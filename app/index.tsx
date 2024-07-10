@@ -51,21 +51,21 @@ export default function index() {
        <View style={styles.footer}>
 
             <Image
-            style={styles.tinyLogo3}
+            style={styles.tinyLogo5}
             source={{
               uri: 'https://img.icons8.com/?size=100&id=2797&format=png&color=000000',
             }}
             />
 
             <Image
-            style={styles.tinyLogo4}
+            style={styles.tinyLogo6}
             source={{
               uri: 'https://img.icons8.com/?size=100&id=51779&format=png&color=000000',
             }}
             />
 
             <Image
-            style={styles.tinyLogo5}
+            style={styles.tinyLogo7}
             source={{
               uri: 'https://img.icons8.com/?size=100&id=23175&format=png&color=000000',
             }}
