@@ -30,7 +30,7 @@ export default function Profile() {
                   <Image
                     style={styles.tinyLogo4}
                     source={{
-                    uri: 'https://img.icons8.com/?size=100&id=hZ4wRp2S2o89&format=png&color=000000',
+                    uri: 'https://img.icons8.com/?size=100&id=47270&format=png&color=000000',
                     }}
                     />
 
@@ -272,8 +272,8 @@ const styles = StyleSheet.create({
       },
       tinyLogo4:{
      
-        width: 32,
-        height: 29,
+        width: 30,
+        height: 28,
         marginTop:12,
         marginLeft:16
       },
