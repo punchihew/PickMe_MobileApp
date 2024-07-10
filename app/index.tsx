@@ -40,9 +40,9 @@ export default function index() {
      <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')}>
         <Text style={styles.Text4}> ADD </Text>
         <Image
-        style={styles.tinyLogo2}
+        style={styles.tinyLogo4}
         source={{
-          uri: 'https://img.icons8.com/?size=100&id=9807&format=png&color=000000',
+          uri: 'https://img.icons8.com/?size=100&id=nkplpFWWQEKZ&format=png&color=000000',
         }}
         />
       </TouchableOpacity>
@@ -133,15 +133,22 @@ const styles = StyleSheet.create({
     borderRadius:6,
     color: 'white',
     marginTop:20,
-    backgroundColor:"black"
+    backgroundColor:"#D6EBF2"
   
   },
 
   Text4:{
     fontSize :14,
     fontWeight: 'bold',
-    color:"white",
+    color:"black",
     
   },
+  tinyLogo4:{
+     
+    width: 16,
+    height: 16,
+    marginTop:-17,
+    marginLeft:38
+  }
 
 });
