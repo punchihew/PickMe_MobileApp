@@ -112,7 +112,7 @@ export default function index() {
 
       <TouchableOpacity style={styles.button3} onPress={() => alert('Button pressed!')} >
         <ImageBackground
-          source={require('../assets/home/dis/Dis2.jpg')}
+          source={require('../assets/home/dis/Dis3.jpg')}
           style={styles.imageBackground}
           imageStyle={styles.imageStyle}
         >
@@ -343,6 +343,7 @@ const styles = StyleSheet.create({
     fontSize :14,
     fontWeight: 'heavy',
     color:"black",
+    marginTop:10
     
   },
   Text6:{
