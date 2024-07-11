@@ -53,6 +53,7 @@ export default function index() {
        <View style={styles.container3}>
           
             <Text style = {styles.Text4}>Rice Kottu With Chiken Popcorn</Text>
+            <Text style = {styles.Text5}>RS.135.00</Text>
             <Image
             style={styles.tinyLogo1}
             source={require('../assets/home/Home2/Ellipse_3.png')}
@@ -62,6 +63,7 @@ export default function index() {
        <View style={styles.container3}>
           
           <Text style = {styles.Text4}>Rice Kottu With Chiken Popcorn</Text>
+          <Text style = {styles.Text5}>RS.135.00</Text>
           <Image
           style={styles.tinyLogo1}
           source={require('../assets/home/Home2/Ellipse_2.png')}
@@ -70,6 +72,7 @@ export default function index() {
      <View style={styles.container3}>
           
           <Text style = {styles.Text4}>Rice Kottu With Chiken Popcorn</Text>
+          <Text style = {styles.Text5}>RS.135.00</Text>
           <Image
           style={styles.tinyLogo1}
           source={require('../assets/home/Home2/Ellipse_4.png')}
@@ -217,7 +220,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.8,
     shadowRadius: 2,
     elevation: 5, // for Android
-    marginTop:20,
+    marginTop:22,
     marginLeft:12,
     borderRadius:10,
   },
@@ -240,7 +243,7 @@ const styles = StyleSheet.create({
      
     width: 30,
     height: 28,
-    marginTop:12,
+    marginTop:18,
     marginLeft:16
   },
   Text3:{
@@ -253,7 +256,7 @@ const styles = StyleSheet.create({
  tinyLogo1:{
   width: 60,
   height: 60,
-  marginTop:-60,
+  marginTop:-40,
   marginLeft:10
 },
 tinyLogo2:{
@@ -274,6 +277,13 @@ Text4:{
   fontWeight: 'bold',
   marginLeft:80,
   marginBottom:48,
+},
+
+Text5:{
+  color: 'black',
+  fontWeight: 'bold',
+  marginLeft:86,
+  marginTop:-36,
 },
  
       
