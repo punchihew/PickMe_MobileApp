@@ -14,6 +14,11 @@ export default function Profile() {
              <View style={styles.view}>
                 <Text>GOLD MEMBER</Text>
              </View>
+             <Text style={styles.Text2}>View Profile</Text>
+
+             <View style = {styles.claim}></View>
+
+            
 
              <TouchableOpacity style={styles.button1} onPress={() => alert('Button pressed!')} > 
                  
@@ -66,7 +71,7 @@ export default function Profile() {
                     />
                       <Text style={styles.Text1}>Payment</Text>
               </TouchableOpacity>
-              
+             
 
        <View style={styles.footer}>
 
@@ -161,7 +166,7 @@ const styles = StyleSheet.create({
         height: 59,
         backgroundColor:"#F39234",
         borderRadius: 10,
-        marginTop:120,
+        marginTop:50,
         marginLeft:-10,
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
@@ -232,7 +237,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'orange',
         borderTopColor: '#e7e7e7',
         borderRadius:10,
-        marginTop:120
+        marginTop:80
       },
       button7: {
         width: 40,
@@ -282,6 +287,34 @@ const styles = StyleSheet.create({
         marginTop:12,
         marginLeft:16
       },
+      Text1:{
+        fontSize :15    ,
+        fontWeight: 'bold',
+        color:"black",
+        marginLeft:70,
+        marginTop:-19,
+      },
+
+      Text2:{
+        fontSize :10   ,
+        fontWeight: 'bold',
+        color:"black",
+        marginLeft:70,
+        marginTop:12,
+        marginRight:-230
+        
+      },
+
+      claim: {
+        width: 300,
+        height: 70,
+        backgroundColor:"red",
+        borderRadius: 10,
+        marginTop:18,
+        marginLeft:10,
+        display:"flex"
+      },
+
     
       
      
