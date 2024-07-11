@@ -5,7 +5,7 @@ export default function index() {
   return (
     <SafeAreaView>
        <View style = {styles.container}>
-       <TouchableOpacity style={styles.button1} onPress={() => alert('Button pressed!')} >
+       <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')} >
             <ImageBackground
             source={{
                 uri: 'https://img.icons8.com/?size=100&id=19175&format=png&color=000000',
@@ -20,7 +20,7 @@ export default function index() {
        </View>
 
        <View style={styles.container1}>
-       <TouchableOpacity style={styles.button2} onPress={() => alert('Button pressed!')} >
+       <TouchableOpacity style={styles.button1} onPress={() => alert('Button pressed!')} >
             <ImageBackground
             source={{
                 uri: 'https://img.icons8.com/?size=100&id=19175&format=png&color=000000',
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
         elevation: 5, // for Android
         marginTop:10,
       },
-      button1: {
+      button: {
         width: 32,
         height: 36,
         borderRadius: 10,
@@ -85,6 +85,24 @@ const styles = StyleSheet.create({
         shadowRadius: 2,
         elevation: 5, // for Android
         marginTop:10,
+      },
+      button1: {
+        width: 32,
+        height: 36,
+        borderRadius: 10,
+        overflow: 'hidden',
+        marginTop:8,
+        marginLeft:10,
+        display:"flex"
+      },
+
+      imageBackground1: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
+      imageStyle1: {
+        borderRadius: 10,
       },
       
 
