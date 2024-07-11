@@ -16,7 +16,24 @@ export default function Profile() {
              </View>
              <Text style={styles.Text2}>View Profile</Text>
 
-             <View style = {styles.claim}></View>
+             <View style = {styles.claim}>
+              <Text style = {styles.Text3}>
+                Don't Miss Out Ypur Valuable Offers
+              </Text>
+              
+              <TouchableOpacity style={styles.button6} onPress={() => alert('Button pressed!')} >
+            <ImageBackground
+            source={{
+                uri: 'https://img.icons8.com/?size=100&id=gkgXdvj3Owk3&format=png&color=000000',
+            }}
+            style={styles.imageBackground1}
+            imageStyle={styles.imageStyle1}
+            >
+            <Text style={styles.text}></Text>
+            </ImageBackground>
+            
+        </TouchableOpacity>
+             </View>
 
             
 
@@ -306,13 +323,23 @@ const styles = StyleSheet.create({
       },
 
       claim: {
-        width: 300,
+        width: 360,
         height: 70,
-        backgroundColor:"red",
+        backgroundColor:"#FFFDD0",
         borderRadius: 10,
         marginTop:18,
-        marginLeft:10,
+        marginLeft:2,
         display:"flex"
+      },
+
+      Text3:{
+        fontSize :18   ,
+        fontWeight: 'bold',
+        color:"black",
+        marginLeft:10,
+        marginTop:12,
+        marginRight:-230
+        
       },
 
     
