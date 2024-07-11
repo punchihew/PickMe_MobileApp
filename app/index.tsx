@@ -16,6 +16,7 @@ export default function index() {
             </ImageBackground>
             
         </TouchableOpacity>
+        <Text style ={styles.Text10}>My Card</Text>
         <Text style ={styles.Text}>Clear Card</Text>
        </View>
 
@@ -48,6 +49,7 @@ export default function index() {
             </ImageBackground>
             
         </TouchableOpacity>
+        <Text style ={styles.Text11}>Kells Super Colombo</Text>
        </View>
 
        <View style={styles.container3}>
@@ -58,6 +60,22 @@ export default function index() {
             style={styles.tinyLogo1}
             source={require('../assets/home/Home2/Ellipse_3.png')}
             />            
+
+                  <Image
+                    style={styles.tinyLogo5}
+                    source={{
+                    uri: 'https://img.icons8.com/?size=100&id=3314&format=png&color=000000',
+                    }}
+                    />     
+
+                    <Text style = {styles.Text12}>2</Text> 
+
+                    <Image
+                    style={styles.tinyLogo6}
+                    source={{
+                    uri: 'https://img.icons8.com/?size=100&id=62888&format=png&color=000000',
+                    }}
+                    />  
        </View>
 
        <View style={styles.container3}>
@@ -68,6 +86,22 @@ export default function index() {
           style={styles.tinyLogo1}
           source={require('../assets/home/Home2/Ellipse_2.png')}
           />            
+
+<Image
+                    style={styles.tinyLogo5}
+                    source={{
+                    uri: 'https://img.icons8.com/?size=100&id=3314&format=png&color=000000',
+                    }}
+                    />     
+
+                    <Text style = {styles.Text12}>1</Text> 
+
+                    <Image
+                    style={styles.tinyLogo6}
+                    source={{
+                    uri: 'https://img.icons8.com/?size=100&id=62888&format=png&color=000000',
+                    }}
+                    />  
      </View>
      <View style={styles.container3}>
           
@@ -76,7 +110,23 @@ export default function index() {
           <Image
           style={styles.tinyLogo1}
           source={require('../assets/home/Home2/Ellipse_4.png')}
-          />            
+          />      
+
+                  <Image
+                    style={styles.tinyLogo5}
+                    source={{
+                    uri: 'https://img.icons8.com/?size=100&id=3314&format=png&color=000000',
+                    }}
+                    />     
+
+                    <Text style = {styles.Text12}>2</Text> 
+
+                    <Image
+                    style={styles.tinyLogo6}
+                    source={{
+                    uri: 'https://img.icons8.com/?size=100&id=62888&format=png&color=000000',
+                    }}
+                    />  
      </View>
 
      <View style={styles.container4}>
@@ -85,6 +135,12 @@ export default function index() {
          <Text style = {styles.Text6}>Dilivery Fee (LKR)</Text>
          <Text style = {styles.Text6}>Handling Fee (LKR)</Text>
          <Text style = {styles.Text7}>Total(LKR)</Text>
+
+
+         <Text style = {styles.Text8}> + 178.00</Text>
+         <Text style = {styles.Text8}> + 110.00 </Text>
+         <Text style = {styles.Text8}> 1780.00 </Text>
+         <Text style = {styles.Text9}> 1670.71 </Text>
      </View>
 
        <View style={styles.flooter}>
@@ -319,6 +375,51 @@ Text7:{
   marginLeft:12,
   marginTop:16,
 },
+
+  Text8:{
+    color: 'black',
+    marginLeft:280,
+    marginTop:-52,
+  },
+  Text9:{
+    color: 'black',
+    fontWeight: 'bold',
+    marginLeft:280,
+    marginTop:89,
+  },
+  Text10:{
+    color: 'black',
+    fontWeight: 'bold',
+    marginLeft:60,
+    marginTop:-22,
+  },
+  Text11:{
+    color: 'black',
+    fontWeight: 'bold',
+    marginLeft:70,
+    marginTop:-22,
+  },
+
+  tinyLogo5:{
+     
+    width: 14,
+    height: 28,
+    marginTop:-40,
+    marginLeft:280,
+  },
+  tinyLogo6:{
+     
+    width: 14,
+    height: 12,
+    marginTop:-15,
+    marginLeft:320,
+  },
+  Text12:{
+    color: 'black',
+    fontWeight: 'bold',
+    marginLeft:306,
+    marginTop:-22,
+  }
  
       
 
