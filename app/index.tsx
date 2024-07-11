@@ -35,6 +35,22 @@ export default function index() {
         <Text style = {styles.Text1}>Delivery Address</Text>
         <Text style= {styles.Text2}>Gamini Hall , MoCallum Road , Colombo 10</Text>
        </View>
+
+       <View style={styles.container2}>
+       <TouchableOpacity style={styles.button2} onPress={() => alert('Button pressed!')} >
+            <ImageBackground
+            source={{
+                uri: 'https://img.icons8.com/?size=100&id=489&format=png&color=000000',
+            }}
+            style={styles.imageBackground2}
+            imageStyle={styles.imageStyle2}
+            >
+            </ImageBackground>
+            
+        </TouchableOpacity>
+       </View>
+
+
     </SafeAreaView>
   )
 }
@@ -53,6 +69,7 @@ const styles = StyleSheet.create({
         elevation: 5, // for Android
         marginTop:10,
       },
+      
       button: {
         width: 32,
         height: 36,
@@ -118,6 +135,38 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginLeft:66,
         marginTop:1,
+  },
+
+  container2: {
+    width: 330,
+    height: 44,
+    backgroundColor: 'red', 
+    position: 'relative',
+    shadowColor: 'orange',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5, // for Android
+    marginTop:-538,
+    marginLeft:32,
+    borderRadius:10,
+  },
+  button2: {
+    width: 32,
+    height: 36,
+    borderRadius: 10,
+    overflow: 'hidden',
+    marginTop:1,
+    marginLeft:20,
+  },
+
+  imageBackground2: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  imageStyle2: {
+    borderRadius: 10,
   },
       
 
