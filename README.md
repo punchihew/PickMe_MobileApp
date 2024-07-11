@@ -1,50 +1,33 @@
-# Welcome to your Expo app 👋
+#Pick Me Foods Mobile APP 
+##SreenShort 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+### Start Screen
 
-## Get started
+<img src="https://raw.githubusercontent.com/punchihew/PickMe_MobileApp/master/SreenShort/WhatsApp%20Image%202024-07-11%20at%2020.33.06.jpeg" width="300" height="600">
 
-1. Install dependencies
+### Login Screen
 
-   ```bash
-   npm install
-   ```
+<img src="https://raw.githubusercontent.com/punchihew/PickMe_MobileApp/master/SreenShort/WhatsApp%20Image%202024-07-11%20at%2020.31.39%20(1).jpeg" width="300" height="600">
 
-2. Start the app
 
-   ```bash
-    npx expo start
-   ```
+### Home Page
 
-In the output, you'll find options to open the app in a
+<img src="https://raw.githubusercontent.com/punchihew/PickMe_MobileApp/master/SreenShort/WhatsApp%20Image%202024-07-11%20at%2020.31.39.jpeg" width="300" height="600">
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Detail Page
 
-## Get a fresh project
+<img src="https://raw.githubusercontent.com/punchihew/PickMe_MobileApp/master/SreenShort/WhatsApp%20Image%202024-07-11%20at%2020.31.38%20(1).jpeg" width="300" height="600">
 
-When you're ready, run:
 
-```bash
-npm run reset-project
-```
+### Profile Page
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+<img src="https://raw.githubusercontent.com/punchihew/PickMe_MobileApp/master/SreenShort/WhatsApp%20Image%202024-07-11%20at%2020.31.38.jpeg" width="300" height="600">
 
-To learn more about developing your project with Expo, look at the following resources:
+### Add To Card 
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
