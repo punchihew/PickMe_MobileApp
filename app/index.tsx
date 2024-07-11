@@ -8,7 +8,7 @@ export default function index() {
        <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')} >
             <ImageBackground
             source={{
-                uri: 'https://img.icons8.com/?size=100&id=19175&format=png&color=000000',
+                uri: 'https://img.icons8.com/?size=100&id=40217&format=png&color=000000',
             }}
             style={styles.imageBackground}
             imageStyle={styles.imageStyle}
@@ -51,7 +51,32 @@ export default function index() {
        </View>
 
        <View style={styles.container3}>
-
+            <Text>Rice Kottu With Chiken Popcorn</Text>
+            <TouchableOpacity style={styles.button3} onPress={() => alert('Button pressed!')} >
+            <ImageBackground
+            source={{
+                uri: 'https://img.icons8.com/?size=100&id=3220&format=png&color=000000',
+            }}
+            style={styles.imageBackground4}
+            imageStyle={styles.imageStyle4}
+            >
+            </ImageBackground>
+            
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button5} onPress={() => alert('Button pressed!')} >
+            <ImageBackground
+            source={{
+                uri: 'https://img.icons8.com/?size=100&id=85554&format=png&color=000000',
+            }}
+            style={styles.imageBackground5}
+            imageStyle={styles.imageStyle5}
+            >
+            </ImageBackground>
+            
+        </TouchableOpacity>
+            <Text>Egg Rice</Text>
+            <Text>Sri Lankan Lunch</Text>
+            
        </View>
 
        <View style={styles.flooter}>
@@ -87,8 +112,8 @@ const styles = StyleSheet.create({
       },
       
       button: {
-        width: 32,
-        height: 36,
+        width: 28,
+        height: 32,
         borderRadius: 10,
         overflow: 'hidden',
         marginTop:8,
