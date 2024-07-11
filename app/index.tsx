@@ -52,8 +52,20 @@ export default function index() {
 
        <View style={styles.container3}>
             <Text>Rice Kottu With Chiken Popcorn</Text>
+            <Image
+            style={styles.tinyLogo1}
+            source={require('../assets/setting/setting.png')}
+            />
             <Text>Egg Rice</Text>
+            <Image
+            style={styles.tinyLogo1}
+            source={require('../assets/setting/setting.png')}
+            />
             <Text>Sri Lankan Lunch</Text>
+            <Image
+            style={styles.tinyLogo1}
+            source={require('../assets/setting/setting.png')}
+            />
             
        </View>
 
@@ -231,8 +243,15 @@ const styles = StyleSheet.create({
     marginLeft:120,
     marginTop:-28,
  },
+ tinyLogo1:{
+  width: 60,
+  height: 60,
+  marginTop:6,
+  marginLeft:10
+},
  
       
 
     })
        
+
