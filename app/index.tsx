@@ -50,6 +50,10 @@ export default function index() {
         </TouchableOpacity>
        </View>
 
+       <View style={styles.container3}>
+
+       </View>
+
 
     </SafeAreaView>
   )
@@ -140,7 +144,7 @@ const styles = StyleSheet.create({
   container2: {
     width: 330,
     height: 44,
-    backgroundColor: 'red', 
+    backgroundColor: '#FFBD31', 
     position: 'relative',
     shadowColor: 'orange',
     shadowOffset: { width: 0, height: 2 },
@@ -167,6 +171,21 @@ const styles = StyleSheet.create({
   },
   imageStyle2: {
     borderRadius: 10,
+  },
+
+  container3: {
+    width: 368,
+    height: 420,
+    backgroundColor: 'white', 
+    position: 'relative',
+    shadowColor: 'black',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5, // for Android
+    marginTop:20,
+    marginLeft:12,
+    borderRadius:10,
   },
       
 
