@@ -51,23 +51,30 @@ export default function index() {
        </View>
 
        <View style={styles.container3}>
-            <Text>Rice Kottu With Chiken Popcorn</Text>
+          
+            <Text style = {styles.Text4}>Rice Kottu With Chiken Popcorn</Text>
             <Image
             style={styles.tinyLogo1}
-            source={require('../assets/setting/setting.png')}
-            />
-            <Text>Egg Rice</Text>
-            <Image
-            style={styles.tinyLogo1}
-            source={require('../assets/setting/setting.png')}
-            />
-            <Text>Sri Lankan Lunch</Text>
-            <Image
-            style={styles.tinyLogo1}
-            source={require('../assets/setting/setting.png')}
-            />
-            
+            source={require('../assets/home/Home2/Ellipse_3.png')}
+            />            
        </View>
+
+       <View style={styles.container3}>
+          
+          <Text style = {styles.Text4}>Rice Kottu With Chiken Popcorn</Text>
+          <Image
+          style={styles.tinyLogo1}
+          source={require('../assets/home/Home2/Ellipse_2.png')}
+          />            
+     </View>
+     <View style={styles.container3}>
+          
+          <Text style = {styles.Text4}>Rice Kottu With Chiken Popcorn</Text>
+          <Image
+          style={styles.tinyLogo1}
+          source={require('../assets/home/Home2/Ellipse_4.png')}
+          />            
+     </View>
 
        <View style={styles.flooter}>
 
@@ -202,7 +209,7 @@ const styles = StyleSheet.create({
 
   container3: {
     width: 368,
-    height: 420,
+    height: 68,
     backgroundColor: 'white', 
     position: 'relative',
     shadowColor: 'black',
@@ -246,8 +253,27 @@ const styles = StyleSheet.create({
  tinyLogo1:{
   width: 60,
   height: 60,
-  marginTop:6,
+  marginTop:-60,
   marginLeft:10
+},
+tinyLogo2:{
+  width: 60,
+  height: 60,
+  marginTop:10,
+  marginLeft:10
+},
+tinyLogo3:{
+  width: 60,
+  height: 60,
+  marginTop:10,
+  marginLeft:10
+},
+
+Text4:{
+  color: 'orange',
+  fontWeight: 'bold',
+  marginLeft:80,
+  marginBottom:48,
 },
  
       
