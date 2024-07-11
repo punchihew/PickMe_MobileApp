@@ -380,8 +380,8 @@ const styles = StyleSheet.create({
       tinyLogo3:{
         width: 19,
         height: 22,
-        marginTop:-18,
-        marginLeft:36
+        marginTop:-19,
+        marginLeft:328,
       },
 
     
