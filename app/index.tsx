@@ -52,28 +52,6 @@ export default function index() {
 
        <View style={styles.container3}>
             <Text>Rice Kottu With Chiken Popcorn</Text>
-            <TouchableOpacity style={styles.button3} onPress={() => alert('Button pressed!')} >
-            <ImageBackground
-            source={{
-                uri: 'https://img.icons8.com/?size=100&id=3220&format=png&color=000000',
-            }}
-            style={styles.imageBackground4}
-            imageStyle={styles.imageStyle4}
-            >
-            </ImageBackground>
-            
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button5} onPress={() => alert('Button pressed!')} >
-            <ImageBackground
-            source={{
-                uri: 'https://img.icons8.com/?size=100&id=85554&format=png&color=000000',
-            }}
-            style={styles.imageBackground5}
-            imageStyle={styles.imageStyle5}
-            >
-            </ImageBackground>
-            
-        </TouchableOpacity>
             <Text>Egg Rice</Text>
             <Text>Sri Lankan Lunch</Text>
             
@@ -253,6 +231,7 @@ const styles = StyleSheet.create({
     marginLeft:120,
     marginTop:-28,
  },
+ 
       
 
     })
