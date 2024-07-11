@@ -18,10 +18,17 @@ export default function Profile() {
 
              <View style = {styles.claim}>
               <Text style = {styles.Text3}>
-                Don't Miss Out Ypur Valuable Offers
+                Don't Miss Out Your Valuable Offers
               </Text>
-              
-              <TouchableOpacity style={styles.button6} onPress={() => alert('Button pressed!')} >
+              <Image
+        style={styles.tinyLogo3}
+        source={{
+          uri: 'https://img.icons8.com/?size=100&id=23057&format=png&color=000000',
+        }}
+        />
+              <View style={styles.currentIndicator} />
+
+              <TouchableOpacity style={styles.button9} onPress={() => alert('Button pressed!')} >
             <ImageBackground
             source={{
                 uri: 'https://img.icons8.com/?size=100&id=gkgXdvj3Owk3&format=png&color=000000',
@@ -329,7 +336,12 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         marginTop:18,
         marginLeft:2,
-        display:"flex"
+        shadowColor: 'orange',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.8,
+        shadowRadius: 2,
+        elevation: 5, // for Android
+        
       },
 
       Text3:{
@@ -340,6 +352,36 @@ const styles = StyleSheet.create({
         marginTop:12,
         marginRight:-230
         
+      },
+
+      button9: {
+        width: 30,
+        height: 11,
+        borderRadius: 10,
+        marginTop:2,
+        marginLeft:320,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.8,
+        shadowRadius: 2,
+        elevation: 5, // for Android
+        
+      },
+
+      currentIndicator: {
+        height: 2,
+        width: 260,
+        borderRadius: 10,
+        backgroundColor: "orange",
+        marginHorizontal: 5,
+        marginLeft:30,
+        marginTop:10,
+      },
+      tinyLogo3:{
+        width: 19,
+        height: 22,
+        marginTop:-18,
+        marginLeft:36
       },
 
     
