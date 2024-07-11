@@ -79,6 +79,14 @@ export default function index() {
           />            
      </View>
 
+     <View style={styles.container4}>
+         
+         <Text style = {styles.Text6}>Sub Total (LKR)</Text>
+         <Text style = {styles.Text6}>Dilivery Fee (LKR)</Text>
+         <Text style = {styles.Text6}>Handling Fee (LKR)</Text>
+         <Text style = {styles.Text7}>Total(LKR)</Text>
+     </View>
+
        <View style={styles.flooter}>
 
               <Image
@@ -176,7 +184,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginLeft:66,
         marginTop:1,
-  },
+      },
 
   container2: {
     width: 330,
@@ -220,7 +228,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.8,
     shadowRadius: 2,
     elevation: 5, // for Android
-    marginTop:22,
+    marginTop:18,
     marginLeft:12,
     borderRadius:10,
   },
@@ -284,6 +292,32 @@ Text5:{
   fontWeight: 'bold',
   marginLeft:86,
   marginTop:-36,
+},
+
+container4: {
+  width: 368,
+  height: 148,
+  backgroundColor: 'white', 
+  position: 'relative',
+  shadowColor: 'black',
+  shadowOffset: { width: 0, height: 2 },
+  shadowOpacity: 0.8,
+  shadowRadius: 2,
+  elevation: 5, // for Android
+  marginTop:22,
+  marginLeft:12,
+  borderRadius:10,
+},
+Text6:{
+  color: 'black',
+  marginLeft:12,
+  marginTop:16,
+},
+Text7:{
+  color: 'black',
+  fontWeight: 'bold',
+  marginLeft:12,
+  marginTop:16,
 },
  
       
