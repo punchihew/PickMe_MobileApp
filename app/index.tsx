@@ -1,4 +1,4 @@
-import { View, Text,SafeAreaView,StyleSheet,TouchableOpacity,ImageBackground } from 'react-native'
+import { View, Text,SafeAreaView,StyleSheet,TouchableOpacity,ImageBackground,Image } from 'react-native'
 import React from 'react'
 
 export default function index() {
@@ -54,6 +54,18 @@ export default function index() {
 
        </View>
 
+       <View style={styles.flooter}>
+
+              <Image
+                    style={styles.tinyLogo4}
+                    source={{
+                    uri: 'https://img.icons8.com/?size=100&id=14oX0z9ydOeX&format=png&color=000000',
+                    }}
+                    />
+           
+           <Text style = {styles.Text3}>Place A Oder</Text>
+       </View>
+
 
     </SafeAreaView>
   )
@@ -64,7 +76,7 @@ const styles = StyleSheet.create({
     container: {
         width: 390,
         height: 50,
-        backgroundColor: 'white', 
+        backgroundColor: '#FEF5E6', 
         position: 'relative',
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
@@ -101,7 +113,7 @@ const styles = StyleSheet.create({
       container1: {
         width: 390,
         height: 640,
-        backgroundColor: 'white', 
+        backgroundColor: '#FEF5E6', 
         position: 'relative',
         shadowColor: 'orange',
         shadowOffset: { width: 0, height: 2 },
@@ -187,6 +199,35 @@ const styles = StyleSheet.create({
     marginLeft:12,
     borderRadius:10,
   },
+
+  flooter: {
+    width: 368,
+    height: 54,
+    backgroundColor: '#00941A', 
+    position: 'relative',
+    shadowColor: 'black',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5, // for Android
+    marginTop:20,
+    marginLeft:12,
+    borderRadius:10,
+  },
+  tinyLogo4:{
+     
+    width: 30,
+    height: 28,
+    marginTop:12,
+    marginLeft:16
+  },
+  Text3:{
+    fontSize:20,
+    color: 'black',
+    fontWeight: 'bold',
+    marginLeft:120,
+    marginTop:-28,
+ },
       
 
     })
