@@ -235,12 +235,7 @@ const styles = StyleSheet.create({
         marginLeft:66,
         marginTop:-28,
      },
-    Text2:{
-        color: 'orange',
-        fontWeight: 'bold',
-        marginLeft:66,
-        marginTop:1,
-      },
+   
 
   container2: {
     width: 330,
