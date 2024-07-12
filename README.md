@@ -29,6 +29,13 @@
 
 <img src="https://raw.githubusercontent.com/punchihew/PickMe_MobileApp/master/SreenShort/WhatsApp%20Image%202024-07-11%20at%2022.06.12.jpeg" width="300" height="600">
 
+### Setting 
+
+<img src="https://raw.githubusercontent.com/punchihew/PickMe_MobileApp/master/SreenShort/WhatsApp%20Image%202024-07-12%20at%2013.23.20.jpeg" width="300" height="600">
+
+
+
+
 
 
 
