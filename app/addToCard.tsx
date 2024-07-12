@@ -34,7 +34,7 @@ export default function index() {
         </TouchableOpacity>
 
         <Text style = {styles.Text1}>Delivery Address</Text>
-        <Text style= {styles.Text2}>Gamini Hall , MoCallum Road , Colombo 10</Text>
+        <Text style= {styles.Text5}>Gamini Hall , MoCallum Road , Colombo 10</Text>
        </View>
 
        <View style={styles.container2}>
