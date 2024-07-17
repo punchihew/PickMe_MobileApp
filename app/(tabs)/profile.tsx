@@ -158,12 +158,12 @@ const styles = StyleSheet.create({
       },
 
       container1: {
-        width:380,
+        width:390,
         flex: 1,
         alignItems: 'center',
         backgroundColor: '#FCE7A8', 
         position: 'relative',
-        borderRadius:10,
+        borderRadius:2,
         marginTop:10
       },
       tinyLogo1:{
