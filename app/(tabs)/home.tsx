@@ -1,5 +1,6 @@
 import React from 'react'
 import { Text, View,StyleSheet,Image,TextInput,ScrollView,TouchableOpacity,SafeAreaView } from "react-native";
+import { Link } from 'expo-router';
 
 
 export default function home() {
@@ -52,19 +53,19 @@ export default function home() {
 
        <Image
         style={styles.Ellipse4}
-        source={require('../assets/home/Home2/Ellipse_3.png')}
+        source={require('../../assets/home/Home2/Ellipse_3.png')}
       />
        <Image
         style={styles.Ellipse5}
-        source={require('../assets/home/Home2/Ellipse_5.png')}
+        source={require('../../assets/home/Home2/Ellipse_5.png')}
       />
        <Image
         style={styles.Ellipse3}
-        source={require('../assets/home/Home2/Ellipse_4.png')}
+        source={require('../../assets/home/Home2/Ellipse_4.png')}
       />
       <Image
         style={styles.Ellipse6}
-        source={require('../assets/home/Home2/Ellipse_2.png')}
+        source={require('../../assets/home/Home2/Ellipse_2.png')}
       />
             <View style={styles.currentIndicator} />
           
@@ -73,11 +74,15 @@ export default function home() {
 
        <Image
         style={styles.image1}
-        source={require('../assets/home/image5.jpg')}
+        source={require('../../assets/home/image5.jpg')}
       />
 
             <View style = {styles.last}>
               <Text style = {styles.Text5}>More Info</Text> 
+              <Link href="/home2" style={{ flex: 1 }}>
+              
+              </Link>
+              
             </View>
             <Image
         style={styles.lastPic}
@@ -88,11 +93,14 @@ export default function home() {
        
     <Image
         style={styles.image1}
-        source={require('../assets/home/image1.jpg')}
+        source={require('../../assets/home/image1.jpg')}
       />
       
       <View style = {styles.last}>
               <Text style = {styles.Text5}>More Info</Text> 
+              <Link href="/home2" style={{ flex: 1 }}>
+              
+              </Link>
             </View>
             <Image
         style={styles.lastPic}
@@ -103,11 +111,14 @@ export default function home() {
 
      <Image
         style={styles.image1}
-        source={require('../assets/home/image2.jpg')}
+        source={require('../../assets/home/image2.jpg')}
       /> 
 
           <View style = {styles.last}>
               <Text style = {styles.Text5}>More Info</Text> 
+              <Link href="/home2" style={{ flex: 1 }}>
+              
+              </Link>
             </View>
             <Image
         style={styles.lastPic}
@@ -118,10 +129,13 @@ export default function home() {
 
      <Image
         style={styles.image1}
-        source={require('../assets/home/image8.jpg')}
+        source={require('../../assets/home/image8.jpg')}
       />
           <View style = {styles.last}>
               <Text style = {styles.Text5}>More Info</Text> 
+              <Link href="/home2" style={{ flex: 1 }}>
+              
+              </Link>
             </View>
             <Image
         style={styles.lastPic}
@@ -132,12 +146,15 @@ export default function home() {
 
       <Image
         style={styles.image1}
-        source={require('../assets/home/image9.jpg')}
+        source={require('../../assets/home/image9.jpg')}
         
       />
 
           <View style = {styles.last}>
               <Text style = {styles.Text5}>More Info</Text> 
+              <Link href="/home2" style={{ flex: 1 }}>
+              
+              </Link>
             </View>
             <Image
         style={styles.lastPic}
@@ -148,7 +165,7 @@ export default function home() {
 
       <Image
         style={styles.image1}
-        source={require('../assets/home/image10.jpg')}
+        source={require('../../assets/home/image10.jpg')}
       />
             <View style = {styles.last}>
               <Text style = {styles.Text5}>More Info</Text> 
@@ -162,7 +179,7 @@ export default function home() {
 
        </ScrollView>
       
-       <View style={styles.footer}>
+       {/* <View style={styles.footer}>
 
        <Image
         style={styles.tinyLogo3}
@@ -186,7 +203,7 @@ export default function home() {
         />
 
         <Text style={styles.footerText}></Text>
-      </View>
+      </View> */}
 
     </SafeAreaView>
   )

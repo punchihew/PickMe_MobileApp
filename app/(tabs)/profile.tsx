@@ -1,5 +1,6 @@
 import { View, Text,StyleSheet,SafeAreaView,ScrollView,Image,TouchableOpacity,ImageBackground} from 'react-native'
 import React from 'react'
+import { Link } from 'expo-router';
 
 export default function Profile() {
   return (
@@ -7,12 +8,15 @@ export default function Profile() {
       <View style = {styles.container1}>
         <Image
             style={styles.tinyLogo1}
-            source={require('../assets/setting/setting.png')}
+            source={require('../../assets/setting/setting.png')}
             />
 
             <Text style = {styles.Text}>Navishka Punchihewa</Text>
              <View style={styles.view}>
                 <Text>GOLD MEMBER</Text>
+                <Link href="/setting" style={{ flex: 1 }}>
+              
+                </Link>  
              </View>
              <Text style={styles.Text2}>View Profile</Text>
 
@@ -97,7 +101,7 @@ export default function Profile() {
               </TouchableOpacity>
              
 
-       <View style={styles.footer}>
+       {/* <View style={styles.footer}>
 
         <TouchableOpacity style={styles.button7} onPress={() => alert('Button pressed!')} >
             <ImageBackground
@@ -136,7 +140,7 @@ export default function Profile() {
             
         </TouchableOpacity>
             
-      </View>
+      </View> */}
                     
             
       </View>

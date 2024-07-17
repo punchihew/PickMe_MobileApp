@@ -1,4 +1,5 @@
 import { Text, View,StyleSheet,Image,TextInput,TouchableOpacity, } from "react-native";
+import { Link } from 'expo-router';
 
 
 export default function login() {
@@ -28,6 +29,10 @@ export default function login() {
 
      <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')}>
         <Text style={styles.button}> SIGN UP </Text>
+        
+        <Link href="/home" style={{ flex: 1 }}>
+              
+            </Link>
       </TouchableOpacity>
 
      <Image

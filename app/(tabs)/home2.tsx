@@ -1,10 +1,14 @@
 import { View, Text ,StyleSheet,SafeAreaView,Image,TouchableOpacity,ImageBackground,ScrollView} from 'react-native'
 import React from 'react'
+import { Link } from 'expo-router';
 
 export default function Home2() {
   return (
     <SafeAreaView style={styles.container}> 
        <View style={styles.container1}>
+       <Link href="/card" style={{ flex: 1 }}>
+                
+                </Link>
 
             <Image
             style={styles.tinyLogo8}
@@ -20,7 +24,7 @@ export default function Home2() {
             />
        <Image
         style={styles.image}
-        source={require('../assets/home/image5.jpg')}
+        source={require('../../assets/home/image5.jpg')}
       />
 
            <Image
@@ -71,12 +75,18 @@ export default function Home2() {
          
      <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')}>
         <Text style={styles.Text4}> ADD </Text>
+        <Link href="/card" style={{ flex: 1 }}>
+                
+                </Link>
         <Image
         style={styles.tinyLogo4}
         source={{
           uri: 'https://img.icons8.com/?size=100&id=nkplpFWWQEKZ&format=png&color=000000',
         }}
+        
         />
+         
+
       </TouchableOpacity>
 
        <Text style = {styles.Text5}>  
@@ -89,7 +99,7 @@ export default function Home2() {
        
         <TouchableOpacity style={styles.button1} onPress={() => alert('Button pressed!')} >
         <ImageBackground
-          source={require('../assets/home/image9.jpg')}
+          source={require('../../assets/home/image9.jpg')}
           style={styles.imageBackground}
           imageStyle={styles.imageStyle}
         >
@@ -100,7 +110,7 @@ export default function Home2() {
 
       <TouchableOpacity style={styles.button1} onPress={() => alert('Button pressed!')} >
         <ImageBackground
-          source={require('../assets/home/dis/Dis1.jpg')}
+          source={require('../../assets/home/dis/Dis1.jpg')}
           style={styles.imageBackground}
           imageStyle={styles.imageStyle}
         >
@@ -111,7 +121,7 @@ export default function Home2() {
 
       <TouchableOpacity style={styles.button2} onPress={() => alert('Button pressed!')} >
         <ImageBackground
-          source={require('../assets/home/dis/Dis2.jpg')}
+          source={require('../../assets/home/dis/Dis2.jpg')}
           style={styles.imageBackground}
           imageStyle={styles.imageStyle}
         >
@@ -122,7 +132,7 @@ export default function Home2() {
 
       <TouchableOpacity style={styles.button3} onPress={() => alert('Button pressed!')} >
         <ImageBackground
-          source={require('../assets/home/dis/Dis3.jpg')}
+          source={require('../../assets/home/dis/Dis3.jpg')}
           style={styles.imageBackground}
           imageStyle={styles.imageStyle}
         >
@@ -134,7 +144,7 @@ export default function Home2() {
       </ScrollView>
        </View>
      
-       <View style={styles.footer}>
+       {/* <View style={styles.footer}>
 
        <TouchableOpacity style={styles.button4} onPress={() => alert('Button pressed!')} >
         <ImageBackground
@@ -160,7 +170,10 @@ export default function Home2() {
         </ImageBackground>
         
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button6} onPress={() => alert('Button pressed!')} >
+      <TouchableOpacity style={styles.button6} onPress={() => alert('Button!')} >
+      <Link href="/card" style={{ flex: 1 }}>
+                
+                </Link>
         <ImageBackground
           source={{
             uri: 'https://img.icons8.com/?size=100&id=51779&format=png&color=000000',
@@ -173,7 +186,7 @@ export default function Home2() {
         
       </TouchableOpacity>
         
-        </View>
+        </View> */}
 
     </SafeAreaView>
   )

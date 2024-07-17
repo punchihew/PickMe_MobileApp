@@ -1,5 +1,6 @@
 import { View, Text ,StyleSheet,SafeAreaView,TouchableOpacity,ImageBackground,Image} from 'react-native'
 import React from 'react'
+import { Link } from 'expo-router';
 
 export default function index() {
   return (
@@ -47,7 +48,7 @@ export default function index() {
                     }}
                     />  
                             <Text style={styles.Text4}>Email Address</Text>
-                            <Text style= {styles.Text7}>NavishkaPucnhihewa@gmail.com</Text>
+                            <Text style= {styles.Text7}>NavishkaPucnhihewa@gmail.com </Text>
                             <View style={styles.currentIndicator} />
                    <Image
                     style={styles.tinyLogo5}
@@ -109,6 +110,9 @@ export default function index() {
       
       <View style={styles.flooter1}>
         <Text style = {styles.Text6}> LOGOUT</Text>
+        <Link href="/login" style={{ flex: 1 }}>
+              
+              </Link>
         </View>
       
     </SafeAreaView>

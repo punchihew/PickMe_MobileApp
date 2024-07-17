@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View,Image,TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View,Image,TouchableOpacity, } from 'react-native'
 import React from 'react'
+import { Link } from 'expo-router';
 
 type Props = {}
 
@@ -21,6 +22,9 @@ const welcom = (props: Props) => {
       
 
       <TouchableOpacity style={styles.button} onPress={() => alert('Welcome To Our Foodies!')}>
+         <Link href="/login" style={{ flex: 1 }}>
+                {/* <Loading/> */}
+            </Link>
         <Text style={styles.Text}> Get Started</Text>
       </TouchableOpacity>
       <Image

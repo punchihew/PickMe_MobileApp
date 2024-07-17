@@ -1,11 +1,15 @@
 import { View, Text,SafeAreaView,StyleSheet,TouchableOpacity,ImageBackground,Image } from 'react-native'
 import React from 'react'
+import { Link } from 'expo-router';
 
 export default function index() {
   return (
     <SafeAreaView>
        <View style = {styles.container}>
        <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')} >
+           <Link href="/profile" style={{ flex: 1 }}>
+              
+              </Link>
             <ImageBackground
             source={{
                 uri: 'https://img.icons8.com/?size=100&id=40217&format=png&color=000000',
@@ -58,7 +62,7 @@ export default function index() {
             <Text style = {styles.Text5}>RS.135.00</Text>
             <Image
             style={styles.tinyLogo1}
-            source={require('../assets/home/Home2/Ellipse_3.png')}
+            source={require('../../assets/home/Home2/Ellipse_3.png')}
             />            
 
                   <Image
@@ -84,7 +88,7 @@ export default function index() {
           <Text style = {styles.Text5}>RS.135.00</Text>
           <Image
           style={styles.tinyLogo1}
-          source={require('../assets/home/Home2/Ellipse_2.png')}
+          source={require('../../assets/home/Home2/Ellipse_2.png')}
           />            
 
 <Image
@@ -109,7 +113,7 @@ export default function index() {
           <Text style = {styles.Text5}>RS.135.00</Text>
           <Image
           style={styles.tinyLogo1}
-          source={require('../assets/home/Home2/Ellipse_4.png')}
+          source={require('../../assets/home/Home2/Ellipse_4.png')}
           />      
 
                   <Image
@@ -143,7 +147,7 @@ export default function index() {
          <Text style = {styles.Text9}> 1670.71 </Text>
      </View>
 
-       <View style={styles.flooter}>
+       {/* <View style={styles.flooter}>
 
               <Image
                     style={styles.tinyLogo4}
@@ -153,7 +157,7 @@ export default function index() {
                     />
            
            <Text style = {styles.Text3}>Place A Oder</Text>
-       </View>
+       </View> */}
 
 
     </SafeAreaView>
