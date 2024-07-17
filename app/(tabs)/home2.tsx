@@ -74,10 +74,12 @@ export default function Home2() {
 
          
      <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')}>
-        <Text style={styles.Text4}> ADD </Text>
-        <Link href="/card" style={{ flex: 1 }}>
+
+     <Link href="/card" style={{ flex: 1 }}>
                 
                 </Link>
+        <Text style={styles.Text4}> ADD </Text>
+
         <Image
         style={styles.tinyLogo4}
         source={{
@@ -201,7 +203,7 @@ const styles = StyleSheet.create({
     position: 'relative'
   },
   container1: {
-    width:380,
+    width:390,
     flex: 1,
     alignItems: 'center',
     backgroundColor: 'orange', 
@@ -269,8 +271,8 @@ const styles = StyleSheet.create({
   button:{
     marginLeft:280,
     fontWeight: 'bold',
-    height:18,
-    width:58,
+    height:24,
+    width:62,
     borderRadius:6,
     color: 'white',
     marginTop:20,
@@ -288,7 +290,7 @@ const styles = StyleSheet.create({
      
     width: 16,
     height: 16,
-    marginTop:-17,
+    marginTop:-16,
     marginLeft:38
   },
   footer: {

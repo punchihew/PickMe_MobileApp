@@ -298,11 +298,11 @@ const styles = StyleSheet.create({
       },
 
       image1: {
-        width: 320,
+        width: 340,
         height: 220,
       position:"relative",
       borderRadius:10,
-      marginLeft:-10,
+      marginLeft:20,
       marginTop:10
       },
 
@@ -395,7 +395,7 @@ const styles = StyleSheet.create({
         borderTopColor: '#e7e7e7',
         borderRadius:10,
         marginTop:-20,
-        marginLeft:220,
+        marginLeft:260,
         
       },
 
