@@ -346,7 +346,7 @@ Text5:{
   color: 'black',
   fontWeight: 'bold',
   marginLeft:86,
-  marginTop:-36,
+  marginTop:6,
 },
 
 container4: {
