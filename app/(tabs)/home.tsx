@@ -1,212 +1,213 @@
 import React from 'react'
-import { Text, View,StyleSheet,Image,TextInput,ScrollView,TouchableOpacity,SafeAreaView } from "react-native";
+import { Text, View,StyleSheet,Image,TextInput,ScrollView,TouchableOpacity,SafeAreaView,ListRenderItem } from "react-native";
 import { Link } from 'expo-router';
-
+import listingData from '../../data/descrpition.json';
+import {ListingType} from '../../type/listingType'
 
 export default function home() {
-  return (
-    <SafeAreaView style = {styles.container}>
-
-
-       <Image
-        style={styles.location2}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=9q3GMpxNIMjC&format=png&color=000000',
-        }}
-      /> 
-      <Image
-        style={styles.location1}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=13800&format=png&color=000000',
-        }}
-      /> 
-        <Text style = {styles.Text4}>Sri Lanka, Matara</Text>
-      <View>
-      <Image
-        style={styles.location}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=70098&format=png&color=000000',
-        }}
-      /> 
-
-       
-      </View>
-       
-       <Text style = {styles.Text}>Hello, Navishka!</Text>
-       <Text style = {styles.Text1}>Make your own food stay at</Text>
-       <Text style = {styles.Text2}>Home!</Text>
-
-       <TextInput
-        style={styles.input}
-        placeholder="Search Here"
-        keyboardType="default"
-      />
-
-       <Image
-        style={styles.search}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=7695&format=png&color=000000',
-        }}
-      /> 
-       <Text style = {styles.Text3}>Outlets Near You!</Text>
-
-
-       <Image
-        style={styles.Ellipse4}
-        source={require('../../assets/home/Home2/Ellipse_3.png')}
-      />
-       <Image
-        style={styles.Ellipse5}
-        source={require('../../assets/home/Home2/Ellipse_5.png')}
-      />
-       <Image
-        style={styles.Ellipse3}
-        source={require('../../assets/home/Home2/Ellipse_4.png')}
-      />
-      <Image
-        style={styles.Ellipse6}
-        source={require('../../assets/home/Home2/Ellipse_2.png')}
-      />
-            <View style={styles.currentIndicator} />
-          
-        
-       <ScrollView style={styles.scrollView}>
-
-       <Image
-        style={styles.image1}
-        source={require('../../assets/home/image5.jpg')}
-      />
-
-            <View style = {styles.last}>
-              <Text style = {styles.Text5}>More Info</Text> 
-              <Link href="/home2" style={{ flex: 1 }}>
-              
-              </Link>
-              
-            </View>
-            <Image
-        style={styles.lastPic}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
-        }}
-        />
-       
-    <Image
-        style={styles.image1}
-        source={require('../../assets/home/image1.jpg')}
-      />
-      
-      <View style = {styles.last}>
-              <Text style = {styles.Text5}>More Info</Text> 
-              <Link href="/home2" style={{ flex: 1 }}>
-              
-              </Link>
-            </View>
-            <Image
-        style={styles.lastPic}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
-        }}
-        />
-
-     <Image
-        style={styles.image1}
-        source={require('../../assets/home/image2.jpg')}
-      /> 
-
-          <View style = {styles.last}>
-              <Text style = {styles.Text5}>More Info</Text> 
-              <Link href="/home2" style={{ flex: 1 }}>
-              
-              </Link>
-            </View>
-            <Image
-        style={styles.lastPic}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
-        }}
-        />
-
-     <Image
-        style={styles.image1}
-        source={require('../../assets/home/image8.jpg')}
-      />
-          <View style = {styles.last}>
-              <Text style = {styles.Text5}>More Info</Text> 
-              <Link href="/home2" style={{ flex: 1 }}>
-              
-              </Link>
-            </View>
-            <Image
-        style={styles.lastPic}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
-        }}
-        />
-
-      <Image
-        style={styles.image1}
-        source={require('../../assets/home/image9.jpg')}
-        
-      />
-
-          <View style = {styles.last}>
-              <Text style = {styles.Text5}>More Info</Text> 
-              <Link href="/home2" style={{ flex: 1 }}>
-              
-              </Link>
-            </View>
-            <Image
-        style={styles.lastPic}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
-        }}
-        />
-
-      <Image
-        style={styles.image1}
-        source={require('../../assets/home/image10.jpg')}
-      />
-            <View style = {styles.last}>
-              <Text style = {styles.Text5}>More Info</Text> 
-            </View>
-            <Image
-        style={styles.lastPic}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
-        }}
-        />
-
-       </ScrollView>
-      
-       {/* <View style={styles.footer}>
-
-       <Image
-        style={styles.tinyLogo3}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=2797&format=png&color=000000',
-        }}
-        />
-
-      <Image
-        style={styles.tinyLogo4}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=51779&format=png&color=000000',
-        }}
-        />
-
+  const renderItems:ListRenderItem<ListingType> = ({item}) => {
+    return ( 
+      <SafeAreaView style = {styles.container}>
+  
+  
+         <Image
+          style={styles.location2}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=9q3GMpxNIMjC&format=png&color=000000',
+          }}
+        /> 
         <Image
-        style={styles.tinyLogo5}
-        source={{
-          uri: 'https://img.icons8.com/?size=100&id=23175&format=png&color=000000',
-        }}
+          style={styles.location1}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=13800&format=png&color=000000',
+          }}
+        /> 
+          <Text style = {styles.Text4}>Sri Lanka, Matara</Text>
+        <View>
+        <Image
+          style={styles.location}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=70098&format=png&color=000000',
+          }}
+        /> 
+  
+         
+        </View>
+         
+         <Text style = {styles.Text}>Hello, Navishka!</Text>
+         <Text style = {styles.Text1}>Make your own food stay at</Text>
+         <Text style = {styles.Text2}>Home!</Text>
+  
+         <TextInput
+          style={styles.input}
+          placeholder="Search Here"
+          keyboardType="default"
         />
-
-        <Text style={styles.footerText}></Text>
-      </View> */}
-
-    </SafeAreaView>
-  )
+  
+         <Image
+          style={styles.search}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=7695&format=png&color=000000',
+          }}
+        /> 
+         <Text style = {styles.Text3}>Outlets Near You!</Text>
+  
+  
+         <Image
+          style={styles.Ellipse4}
+          source={require('../../assets/home/Home2/Ellipse_3.png')}
+        />
+         <Image
+          style={styles.Ellipse5}
+          source={require('../../assets/home/Home2/Ellipse_5.png')}
+        />
+         <Image
+          style={styles.Ellipse3}
+          source={require('../../assets/home/Home2/Ellipse_4.png')}
+        />
+        <Image
+          style={styles.Ellipse6}
+          source={require('../../assets/home/Home2/Ellipse_2.png')}
+        />
+              <View style={styles.currentIndicator} />
+            
+          
+         <ScrollView style={styles.scrollView}>
+  
+         <Image
+          style={styles.image1}
+          source={require('../../assets/home/image5.jpg')}
+        />
+            
+              <View style = {styles.last}>
+                <Text style = {styles.Text5}>More Info</Text> 
+      
+              </View>
+              <Image
+          style={styles.lastPic}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
+          }}
+          />
+         
+      <Image
+          style={styles.image1}
+          source={require('../../assets/home/image1.jpg')}
+        />
+        
+        <View style = {styles.last}>
+                <Text style = {styles.Text5}>More Info</Text> 
+                <Link href="/home2" style={{ flex: 1 }}>
+                
+                </Link>
+              </View>
+              <Image
+          style={styles.lastPic}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
+          }}
+          />
+  
+       <Image
+          style={styles.image1}
+          source={require('../../assets/home/image2.jpg')}
+        /> 
+  
+            <View style = {styles.last}>
+                <Text style = {styles.Text5}>More Info</Text> 
+                <Link href="/home2" style={{ flex: 1 }}>
+                
+                </Link>
+              </View>
+              <Image
+          style={styles.lastPic}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
+          }}
+          />
+  
+       <Image
+          style={styles.image1}
+          source={require('../../assets/home/image8.jpg')}
+        />
+            <View style = {styles.last}>
+                <Text style = {styles.Text5}>More Info</Text> 
+                <Link href="/home2" style={{ flex: 1 }}>
+                
+                </Link>
+              </View>
+              <Image
+          style={styles.lastPic}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
+          }}
+          />
+  
+        <Image
+          style={styles.image1}
+          source={require('../../assets/home/image9.jpg')}
+          
+        />
+  
+            <View style = {styles.last}>
+                <Text style = {styles.Text5}>More Info</Text> 
+                <Link href="/home2" style={{ flex: 1 }}>
+                
+                </Link>
+              </View>
+              <Image
+          style={styles.lastPic}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
+          }}
+          />
+  
+        <Image
+          style={styles.image1}
+          source={require('../../assets/home/image10.jpg')}
+        />
+              <View style = {styles.last}>
+                <Text style = {styles.Text5}>More Info</Text> 
+              </View>
+              <Image
+          style={styles.lastPic}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=12229&format=png&color=000000',
+          }}
+          />
+  
+         </ScrollView>
+        
+         {/* <View style={styles.footer}>
+  
+         <Image
+          style={styles.tinyLogo3}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=2797&format=png&color=000000',
+          }}
+          />
+  
+        <Image
+          style={styles.tinyLogo4}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=51779&format=png&color=000000',
+          }}
+          />
+  
+          <Image
+          style={styles.tinyLogo5}
+          source={{
+            uri: 'https://img.icons8.com/?size=100&id=23175&format=png&color=000000',
+          }}
+          />
+  
+          <Text style={styles.footerText}></Text>
+        </View> */}
+  
+      </SafeAreaView>
+    )
+  }
+ 
 }
 
 const styles = StyleSheet.create({
