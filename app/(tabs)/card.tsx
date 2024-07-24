@@ -319,7 +319,7 @@ const styles = StyleSheet.create({
  tinyLogo1:{
   width: 60,
   height: 60,
-  marginTop:-40,
+  marginTop:-76,
   marginLeft:10
 },
 tinyLogo2:{
@@ -346,7 +346,7 @@ Text5:{
   color: 'black',
   fontWeight: 'bold',
   marginLeft:86,
-  marginTop:6,
+  marginTop:-1,
 },
 
 container4: {

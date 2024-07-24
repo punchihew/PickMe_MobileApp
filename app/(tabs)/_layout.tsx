@@ -30,13 +30,16 @@ export default function RootLayout() {
                 
                 },
                 }}>
-              <Tabs.Screen name="profile"  options={{headerShown:false,tabBarIcon : ({}) => <FontAwesome size={28} name='user'  color={"#2A324E"}/>,}} />
-              <Tabs.Screen name="home2"    options={{headerShown:false,tabBarIcon : ({}) => <FontAwesome size={28} name='heart' color={"#2A324E"} />,}}/>
+
               <Tabs.Screen name="home"     options={{headerShown:false,tabBarIcon : ({}) => <FontAwesome size={48} name='home' color={"#2A324E"}
               />,}}/>
+              <Tabs.Screen name="card"     options={{headerShown:false,tabBarIcon : ({}) => <FontAwesome size={38} name='shopping-cart' color={"#2A324E"} />,}}/>
 
-              <Tabs.Screen name="card"     options={{headerShown:false,tabBarIcon : ({}) => <FontAwesome size={28} name='shopping-cart' color={"#2A324E"} />,}}/>
-              <Tabs.Screen name="index"    options={{headerShown:false,tabBarIcon : ({}) => <FontAwesome size={28} name='list' color={"#2A324E"} />,}}/>
+              <Tabs.Screen name="profile"  options={{headerShown:false,tabBarIcon : ({}) => <FontAwesome size={38} name='user'  color={"#2A324E"}/>,}} />
+              <Tabs.Screen name="setting"    options={{headerShown:false,tabBarIcon : ({}) => <FontAwesome size={38} name='gear' color={"#2A324E"} />,}}/>
+              
+
+              <Tabs.Screen name="index"    options={{headerShown:false,tabBarIcon : ({}) => <FontAwesome size={38} name='list' color={"#2A324E"} />,}}/>
            
              </Tabs>
       

@@ -21,12 +21,17 @@ const welcom = (props: Props) => {
       
       
 
-      <TouchableOpacity style={styles.button} onPress={() => alert('Welcome To Our Foodies!')}>
+      {/* <TouchableOpacity style={styles.button} onPress={() => alert('Welcome To Our Foodies!')}>
          <Link href="/login" style={{ flex: 1 }}>
-                {/* <Loading/> */}
+                
             </Link>
         <Text style={styles.Text}> Get Started</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
+
+      <TouchableOpacity style={styles.button}>
+            <Link href="/login" style={styles.Text}>Get Started</Link>
+        </TouchableOpacity>
+        
       <Image
         style={styles.tinyLogo4}
         source={{
